@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearthlily | 晴萱 - Taipei's Premium Senior Lifestyle Concierge</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Premium Navigation Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="brand-logo">
+                <span class="brand-name cinzel-font">HEARTHLILY</span>
+                <span class="brand-chinese Noto Serif TC">晴萱</span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <nav class="desktop-nav">
+                <a href="#story" class="nav-link" data-i18n="nav.story">Felicia's Story</a>
+                <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="#retainers" class="nav-link" data-i18n="nav.retainers">Retainers</a>
+                <a href="#report-card" class="nav-link" data-i18n="nav.report">Report Card</a>
+                <a href="#contact" class="nav-btn-inquire" data-i18n="nav.contact">Inquire</a>
+            </nav>
+
+            <!-- Language & Mobile Menu buttons -->
+            <div class="header-actions">
+                <button id="langToggle" class="lang-switcher-btn">
+                    EN / 繁中
+                </button>
+                <button id="mobileMenuBtn" class="mobile-menu-trigger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileMenu" class="mobile-nav-drawer hidden">
+            <a href="#story" class="nav-link-mobile" data-i18n="nav.story">Felicia's Story</a>
+            <a href="#services" class="nav-link-mobile" data-i18n="nav.services">Services</a>
+            <a href="#retainers" class="nav-link-mobile" data-i18n="nav.retainers">Retainers</a>
+            <a href="#report-card" class="nav-link-mobile" data-i18n="nav.report">Report Card</a>
+            <a href="#contact" class="btn-primary mobile-inquire-btn" data-i18n="nav.contact">Inquire</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-radial-effect"></div>
+        <div class="hero-container">
+            <!-- Hero Content (Left) -->
+            <div class="hero-text-content">
+                <span class="gold-badge" data-i18n="hero.subtitle">TAIPEI'S PREMIER SENIOR CONCIERGE</span>
+                <h1 class="hero-title">
+                    <span class="hero-title-block cinzel-font" data-i18n="hero.title1">Dignified Living,</span>
+                    <span class="hero-title-block italic serif-tc gold-text" data-i18n="hero.title2">Beautifully Curated.</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero.desc">
+                    Artfully blending user-experience research with senior-focused spatial aesthetics to orchestrate daily luxury and total peace of mind for Taipei's elite elders.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn-primary" data-i18n="hero.cta1">Schedule Consultation</a>
+                    <a href="#report-card" class="btn-secondary" data-i18n="hero.cta2">Evaluate Parent's Setup</a>
+                </div>
+            </div>
+
+            <!-- Hero Image Frame (Right) -->
+            <div class="hero-graphics-content">
+                <div class="hero-image-frame">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1200" alt="Sophisticated Interior Space" class="hero-image">
+                </div>
+                <!-- Glass Floating Badge -->
+                <div class="glass-floating-badge animate-float">
+                    <i class="fa-solid fa-hotel gold-icon"></i>
+                    <h4 class="badge-title" data-i18n="hero.badge.title">Concierge & Design</h4>
+                    <p class="badge-desc" data-i18n="hero.badge.desc">Fusing elegant spatial planning with bespoke day-to-day concierge services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Felicia's Story Section -->
+    <section id="story" class="story-section">
+        <div class="story-container">
+            <div class="story-grid">
+                <!-- Portrait Image Frame -->
+                <div class="story-image-column scroll-reveal">
+                    <div class="story-image-wrapper">
+                        <div class="story-offset-border"></div>
+                        <div class="story-image-card">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Felicia - UX Interior Designer" class="story-portrait">
+                        </div>
+                    </div>
+                </div>
+                <!-- Bio Narrative -->
+                <div class="story-text-column scroll-reveal">
+                    <span class="gold-badge" data-i18n="story.meta">THE FACE OF HEARTHLILY</span>
+                    <h2 class="section-heading cinzel-font" data-i18n="story.title">Meet Felicia | 晴萱靈魂人物</h2>
+                    <h3 class="section-subheading" data-i18n="story.subtitle">Bridging User Experience Design and Senior Ergonomics</h3>
+                    <div class="story-body-text">
+                        <p data-i18n="story.p1">
+                            With over a decade of experience across high-tech user-experience research and bespoke residential interior design in Taipei, Felicia views aging through a lens of spatial poetry and frictionless daily flow. 
+                        </p>
+                        <p data-i18n="story.p2">
+                            She founded Hearthlily out of a realization: Taipei's elegant seniors deserve more than medicalized care—they deserve beautiful environments, intellectually rich outings, and spaces designed meticulously to adapt gracefully to physical evolution without ever looking clinical.
+                        </p>
+                    </div>
+                    <div class="signature-block">
+                        <span class="signature-name">Felicia Chang</span>
+                        <span class="signature-title" data-i18n="story.role">FOUNDER & CHIEF LIFE CURATOR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <div class="section-center-header scroll-reveal">
+                <span class="gold-badge" data-i18n="services.meta">BESPOKE SYSTEM</span>
+                <h2 class="section-heading cinzel-font" data-i18n="services.title">The Pillars of Curation</h2>
+                <div class="header-divider"></div>
+            </div>
+
+            <!-- Service Pillars Grid -->
+            <div class="services-grid">
+                <!-- Pillar 1 -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-inner">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <h3 class="service-title cinzel-font" data-i18n="services.s1.title">Aesthetic Retrofits</h3>
+                        <p class="service-desc" data-i18n="services.s1.desc">
+                            Transforming spaces with elegant ergonomics, non-slip luxury textures, customized lighting patterns, and structural safety modifications that look exactly like five-star hotels.
+                        </p>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i><span data-i18n="services.s1.item1">Zero-barrier luxury transitions</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span data-i18n="services.s1.item2">Artisan handrails & lighting design</span></li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-inner">
+                        <div class="service-icon-box gold-icon-theme">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <h3 class="service-title cinzel-font" data-i18n="services.s2.title">Lifestyle Curation</h3>
+                        <p class="service-desc" data-i18n="services.s2.desc">
+                            Curating access to premium art exhibits, gourmet dining experiences, boutique doctor appointment accompaniment, high-end tailors, and intellectual events across Taipei.
+                        </p>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i><span data-i18n="services.s2.item1">Exhibition & fine-dining logistics</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span data-i18n="services.s2.item2">Meticulous medical escort & tracking</span></li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="service-card glass-card scroll-reveal">
+                    <div class="card-inner">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-people-arrows"></i>
+                        </div>
+                        <h3 class="service-title cinzel-font" data-i18n="services.s3.title">UX Family Communication</h3>
+                        <p class="service-desc" data-i18n="services.s3.desc">
+                            Deploying formal user research, affinity mapping, and spatial workshops to bridge design desires, physical vulnerabilities, and goals between parents and their global children.
+                        </p>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i><span data-i18n="services.s3.item1">Family alignment workshops</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span data-i18n="services.s3.item2">Structured reports for children abroad</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Retainer Packages Section -->
+    <section id="retainers" class="retainers-section">
+        <div class="retainers-container">
+            <div class="section-center-header scroll-reveal">
+                <span class="gold-badge" data-i18n="retainer.meta">MEMBERSHIP LEVELS</span>
+                <h2 class="section-heading cinzel-font" data-i18n="retainer.title">Bespoke Retainer Models</h2>
+                <div class="header-divider"></div>
+            </div>
+
+            <!-- Two Tier Display Grid -->
+            <div class="retainers-grid">
+                
+                <!-- Silver Lily Plan -->
+                <div class="retainer-card glass-card scroll-reveal">
+                    <div class="retainer-card-header">
+                        <span class="retainer-badge" data-i18n="retainer.silver.badge">ELEGANT CONCIERGE</span>
+                        <h3 class="retainer-title cinzel-font" data-i18n="retainer.silver.title">Silver Lily</h3>
+                        <div class="retainer-chinese-sub" data-i18n="retainer.silver.subtitle">雅致日常管理</div>
+                        <p class="retainer-desc" data-i18n="retainer.silver.desc">Designed for active seniors who appreciate fine logistics coordination, monthly luxury safety inspections, and a consistent partner for elite Taipei events.</p>
+                    </div>
+                    <ul class="retainer-bullets">
+                        <li><i class="fa-solid fa-chevron-right"></i><span data-i18n="retainer.silver.feature1">Weekly elegant companion excursions (3 hours/week)</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><span data-i18n="retainer.silver.feature2">Primary home interior physical safety audit & simple optimization</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><span data-i18n="retainer.silver.feature3">Bi-weekly curated medical/health coordination & transport mapping</span></li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary retainer-cta-btn" data-i18n="retainer.silver.cta">Select Silver Lily</a>
+                </div>
+
+                <!-- Gold Hearth Plan -->
+                <div class="retainer-card glass-card gold-featured scroll-reveal">
+                    <div class="featured-ribbon" data-i18n="retainer.gold.badge">SIGNATURE ULTRA</div>
+                    <div class="retainer-card-header">
+                        <span class="retainer-badge gold-badge-color" data-i18n="retainer.gold.badge">SIGNATURE ULTRA</span>
+                        <h3 class="retainer-title cinzel-font" data-i18n="retainer.gold.title">Gold Hearth</h3>
+                        <div class="retainer-chinese-sub" data-i18n="retainer.gold.subtitle">金萱至尊管家與美學</div>
+                        <p class="retainer-desc" data-i18n="retainer.gold.desc">The ultimate comprehensive care model, pairing high-touch daily lifestyle management with deep aesthetic and structural interior upgrades for senior longevity.</p>
+                    </div>
+                    <ul class="retainer-bullets">
+                        <li><i class="fa-solid fa-star"></i><strong data-i18n="retainer.gold.feature1">Full master-level senior ergonomics interior layout overhaul</strong></li>
+                        <li><i class="fa-solid fa-star"></i><span data-i18n="retainer.gold.feature2">Daily curated lifestyle concierge services with priority booking</span></li>
+                        <li><i class="fa-solid fa-star"></i><span data-i18n="retainer.gold.feature3">24/7 dedicated liaison and weekly UX reports shared with children globally</span></li>
+                    </ul>
+                    <a href="#contact" class="btn-primary retainer-cta-btn" data-i18n="retainer.gold.cta">Inquire Gold Hearth</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive UX Family Report Card Section -->
+    <section id="report-card" class="report-section">
+        <div class="report-container">
+            <div class="section-center-header scroll-reveal">
+                <span class="gold-badge" data-i18n="report.meta">UX ASSESSMENT TOOL</span>
+                <h2 class="section-heading cinzel-font" data-i18n="report.title">UX Family Report Card</h2>
+                <p class="section-header-desc" data-i18n="report.desc">
+                    Often living far from Taipei, children need objective, metrics-driven clarity regarding how gracefully, safely, and beautifully their parents are living. Rate the 4 dimensions below to receive Felicia's custom design outlook.
+                </p>
+            </div>
+
+            <!-- The Assessment Card container -->
+            <div class="assessment-dashboard glass-card scroll-reveal">
+                <div class="dashboard-grid">
+                    
+                    <!-- Left Side: Sliders Controls -->
+                    <div class="sliders-column">
+                        <!-- Dimension 1: Home Safety -->
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="safety" class="slider-label">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <span data-i18n="report.dim1">Home Safety & Ergonomics</span>
+                                </label>
+                                <span id="safetyVal" class="slider-value">5 / 10</span>
+                            </div>
+                            <input type="range" id="safety" min="1" max="10" value="5" class="premium-slider">
+                            <span class="slider-hint" data-i18n="report.dim1.hint">Non-slip details, walk-in shower retrofits, visual clarity layouts.</span>
+                        </div>
+
+                        <!-- Dimension 2: Social & Spirit -->
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="social" class="slider-label">
+                                    <i class="fa-solid fa-masks-theater"></i>
+                                    <span data-i18n="report.dim2">Social Engagement & Arts</span>
+                                </label>
+                                <span id="socialVal" class="slider-value">5 / 10</span>
+                            </div>
+                            <input type="range" id="social" min="1" max="10" value="5" class="premium-slider">
+                            <span class="slider-hint" data-i18n="report.dim2.hint">Exposure to Taipei cultural events, premium intellectual stimulation, fine dining.</span>
+                        </div>
+
+                        <!-- Dimension 3: Health Navigation -->
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="health" class="slider-label">
+                                    <i class="fa-solid fa-notes-medical"></i>
+                                    <span data-i18n="report.dim3">Healthcare Navigation</span>
+                                </label>
+                                <span id="healthVal" class="slider-value">5 / 10</span>
+                            </div>
+                            <input type="range" id="health" min="1" max="10" value="5" class="premium-slider">
+                            <span class="slider-hint" data-i18n="report.dim3.hint">Seamless booking, dignified VIP medical escorting, metric coordination.</span>
+                        </div>
+
+                        <!-- Dimension 4: Everyday Delight -->
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="delight" class="slider-label">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span data-i18n="report.dim4">Aesthetics & Everyday Delight</span>
+                                </label>
+                                <span id="delightVal" class="slider-value">5 / 10</span>
+                            </div>
+                            <input type="range" id="delight" min="1" max="10" value="5" class="premium-slider">
+                            <span class="slider-hint" data-i18n="report.dim4.hint">Fresh custom floral schemes, beautiful daily coordination, styling & luxury routine.</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Interactive Diagnostic Results -->
+                    <div class="diagnostic-column">
+                        <span class="diagnostic-meta" data-i18n="report.output.title">CURRENT LIFE SCORE</span>
+                        
+                        <!-- Visual Circle Meter -->
+                        <div class="circle-meter">
+                            <svg viewBox="0 0 144 144" class="progress-svg">
+                                <circle cx="72" cy="72" r="60" stroke="#f1ece5" stroke-width="8" fill="transparent" class="bg-circle" />
+                                <circle id="scoreProgress" cx="72" cy="72" r="60" stroke="#5F7D6D" stroke-width="8" fill="transparent" stroke-dasharray="376.8" stroke-dashoffset="188.4" class="active-circle" />
+                            </svg>
+                            <span id="scoreText" class="circle-score-text cinzel-font">5.0</span>
+                        </div>
+
+                        <!-- Dynamic Recommendation output -->
+                        <div class="insight-box">
+                            <h4 id="outputHeading" class="insight-heading" data-i18n="report.output.heading">Initial Diagnostic Analysis</h4>
+                            <p id="outputDesc" class="insight-desc" data-i18n="report.output.desc">
+                                Adjust the four core dimension sliders on the left. Our system evaluates the risk ratios of aesthetic neglect versus functional safety.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquire Booking Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container scroll-reveal">
+            <div class="section-center-header">
+                <span class="gold-badge" data-i18n="contact.meta">INITIATE AN ESCORTED LIFE</span>
+                <h2 class="section-heading cinzel-font" data-i18n="contact.title">Begin the Curation</h2>
+                <p class="section-header-desc" data-i18n="contact.subtitle">
+                    Whether you are an adult child located in San Francisco or London, or based here in Taipei, Felicia will reach out within 24 hours to coordinate an exclusive assessment.
+                </p>
+            </div>
+
+            <!-- Luxurious Form Card -->
+            <form id="inquiryForm" class="contact-form glass-card">
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="form.name">Your Full Name</label>
+                        <input type="text" name="name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="form.parentName">Parent's Location (Within Taipei)</label>
+                        <input type="text" name="parentName" required placeholder="e.g. Da'an District" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="form.email">Email Address</label>
+                        <input type="email" name="email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="form.phone">Phone Number (Include International Code)</label>
+                        <input type="text" name="phone" required class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-i18n="form.retainerType">Interested Retainer Level</label>
+                    <select name="retainerType" class="form-select">
+                        <option value="none" data-i18n="form.option.placeholder">Select your preferred package...</option>
+                        <option value="silver" data-i18n="form.option.silver">Silver Lily Retainer (每月雅緻生活策展)</option>
+                        <option value="gold" data-i18n="form.option.gold">Gold Hearth Retainer (頂級金萱全面託付)</option>
+                        <option value="unregistered" data-i18n="form.option.notSure">Not sure yet (目前尚未決定，需初步評估)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-i18n="form.notes">Aesthetic & Safety Concerns / Tell us about your family scenario</label>
+                    <textarea name="notes" rows="4" class="form-textarea"></textarea>
+                </div>
+
+                <div class="form-submit-container">
+                    <button type="submit" class="btn-primary form-submit-btn" data-i18n="form.submit">Submit Curated Inquiry</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="footer-container">
+            <!-- Branding Block -->
+            <div class="footer-brand-block">
+                <a href="#" class="brand-logo">
+                    <span class="brand-name cinzel-font gold-text">HEARTHLILY</span>
+                    <span class="brand-chinese gold-text Noto Serif TC">晴萱</span>
+                </a>
+                <p class="footer-brand-desc" data-i18n="footer.desc">
+                    Re-imagining spatial agency and upscale lifestyle operations for Taipei's elite elder generation. Designed and personally curated by interior designer & senior UX specialist Felicia Chang.
+                </p>
+            </div>
+
+            <!-- Links Block -->
+            <div class="footer-links-block">
+                <h4 class="footer-block-title">Quick Links</h4>
+                <div class="footer-links-list">
+                    <a href="#story" data-i18n="nav.story">Felicia's Story</a>
+                    <a href="#services" data-i18n="nav.services">Services</a>
+                    <a href="#retainers" data-i18n="nav.retainers">Retainers</a>
+                    <a href="#report-card" data-i18n="nav.report">Report Card</a>
+                </div>
+            </div>
+
+            <!-- Address Block -->
+            <div class="footer-contact-block">
+                <h4 class="footer-block-title">Office & Contact</h4>
+                <div class="footer-contact-details">
+                    <p><i class="fa-solid fa-location-dot"></i> Da'an District, Taipei, Taiwan (台北市大安區)</p>
+                    <p><i class="fa-solid fa-envelope"></i> concierge@hearthlily.tw</p>
+                    <p><i class="fa-solid fa-phone"></i> +886 2 2708 8121</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Block -->
+        <div class="footer-copyright-row">
+            <div class="copyright-container">
+                <p>&copy; 2026 Hearthlily Senior Lifestyle Concierge Ltd. All Rights Reserved.</p>
+                <p data-i18n="footer.credits">Designed with Care for Elder Dignity</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Application File -->
+    <script src="app.js"></script>
+</body>
+</html>
