@@ -1,0 +1,29 @@
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+
+# Dependencies & Build
+node_modules/
+dist/
+build/
+out/
+.parcel-cache/
+.npm/
+
+# Logs
+*.log
+trio_reports/
+*.tmp
+temp/
