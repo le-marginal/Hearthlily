@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearthlily | 晴萱 - Family Hub Portal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --color-cream: #FDFBF7;
+            --color-cream-dark: #F5EFEB;
+            --color-sage: #5F7D6D;
+            --color-sage-dark: #2C3C34;
+            --color-sage-light: rgba(95, 125, 109, 0.08);
+            --color-gold: #D4AF37;
+            --color-gold-dark: #B5932B;
+            --color-gold-light: rgba(212, 175, 55, 0.1);
+            --color-charcoal: #2A312D;
+            --glass-bg: rgba(253, 251, 247, 0.85);
+            --glass-border: rgba(95, 125, 109, 0.15);
+            --shadow-subtle: 0 8px 30px rgba(95, 125, 109, 0.04);
+            --shadow-premium: 0 15px 45px rgba(44, 60, 52, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-cream-dark);
+            color: var(--color-charcoal);
+            overflow-x: hidden;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .cinzel-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        .serif-tc {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 280px;
+            background-color: var(--color-sage-dark);
+            color: var(--color-cream);
+            padding: 2.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            border-right: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .sidebar-brand {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            margin-bottom: 3rem;
+        }
+
+        .brand-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            color: var(--color-gold);
+            background: linear-gradient(135deg, #D4AF37, #EEDC82, #B5932B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-chinese {
+            font-size: 1.1rem;
+            color: var(--color-cream);
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .client-profile-box {
+            background: rgba(253, 251, 247, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+
+        .profile-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-cream);
+        }
+
+        .profile-sub {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 0.25rem;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            flex-grow: 1;
+        }
+
+        .menu-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--color-cream);
+            opacity: 0.8;
+            text-decoration: none;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .menu-link i {
+            font-size: 1.1rem;
+            color: var(--color-gold);
+            width: 20px;
+            text-align: center;
+        }
+
+        .menu-link:hover, .menu-link.active {
+            opacity: 1;
+            background-color: var(--color-sage);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .sidebar-footer {
+            border-top: 1px solid rgba(253, 251, 247, 0.1);
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 1px solid var(--color-gold);
+            color: var(--color-cream);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background-color: var(--color-gold);
+            color: var(--color-sage-dark);
+        }
+
+        /* Main Content Panel */
+        .main-panel {
+            margin-left: 280px;
+            flex-grow: 1;
+            padding: 3rem;
+            max-width: 1200px;
+            min-height: 100vh;
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .panel-title h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-sage-dark);
+        }
+
+        .panel-title p {
+            font-size: 0.9rem;
+            color: var(--color-charcoal);
+            opacity: 0.8;
+            margin-top: 0.25rem;
+        }
+
+        .header-badge {
+            background-color: var(--color-gold-light);
+            border: 1px solid var(--color-gold);
+            color: var(--color-gold-dark);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 0.5rem 1.25rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Dashboard Grid Layout */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            gap: 3rem;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-premium);
+            margin-bottom: 2.5rem;
+        }
+
+        .card-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--color-cream-dark);
+            padding-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-sage-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .card-title i {
+            color: var(--color-gold);
+        }
+
+        /* Timeline / Activity Feed */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--color-sage-light);
+            top: 10px;
+            bottom: 10px;
+            left: 20px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-badge {
+            width: 42px;
+            height: 42px;
+            background-color: var(--color-cream);
+            border: 2px solid var(--color-sage);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-sage);
+            flex-shrink: 0;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover .timeline-badge {
+            background-color: var(--color-sage);
+            color: var(--color-cream);
+            transform: scale(1.1);
+        }
+
+        .timeline-content {
+            flex-grow: 1;
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .timeline-meta-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-date {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--color-gold-dark);
+        }
+
+        .timeline-author {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            font-weight: 600;
+        }
+
+        .timeline-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-sage-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-body {
+            font-size: 0.9rem;
+            color: var(--color-charcoal);
+            line-height: 1.6;
+        }
+
+        .timeline-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .timeline-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Metrics Widget */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        .metric-card {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .metric-score {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--color-sage-dark);
+            margin: 0.5rem 0;
+            font-family: 'Cinzel', serif;
+        }
+
+        .metric-score span {
+            font-size: 1rem;
+            color: var(--color-charcoal);
+            opacity: 0.6;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .metric-name {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--color-gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Medical Appointments Log */
+        .medical-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .medical-item {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            gap: 1rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .medical-icon-box {
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-gold-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gold-dark);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .medical-details {
+            flex-grow: 1;
+        }
+
+        .medical-date {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--color-sage);
+            margin-bottom: 0.25rem;
+        }
+
+        .medical-facility {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--color-sage-dark);
+        }
+
+        .medical-doctor {
+            font-size: 0.8rem;
+            color: var(--color-charcoal);
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .medical-notes {
+            font-size: 0.85rem;
+            background-color: var(--color-cream-dark);
+            padding: 0.75rem;
+            border-radius: 6px;
+            line-height: 1.5;
+            border-left: 3px solid var(--color-sage);
+        }
+
+        /* Direct Contact Widget */
+        .contact-box {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .avatar-box {
+            position: relative;
+        }
+
+        .avatar-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--color-gold);
+        }
+
+        .avatar-status {
+            width: 14px;
+            height: 14px;
+            background-color: #2ecc71;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+        }
+
+        .contact-info {
+            flex-grow: 1;
+        }
+
+        .contact-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--color-sage-dark);
+        }
+
+        .contact-title {
+            font-size: 0.75rem;
+            color: var(--color-gold-dark);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .btn-message {
+            background-color: var(--color-sage);
+            color: var(--color-cream);
+            border: none;
+            padding: 0.6rem 1.25rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-message:hover {
+            background-color: var(--color-sage-dark);
+        }
+
+        /* Mobile Adaptations */
+        @media (max-width: 1024px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+                padding: 1.5rem;
+                border-right: none;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            }
+            .sidebar-brand {
+                margin-bottom: 1.5rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .client-profile-box {
+                display: none;
+            }
+            .main-panel {
+                margin-left: 0;
+                padding: 1.5rem;
+            }
+            .panel-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div>
+            <a href="index.html" class="sidebar-brand">
+                <span class="brand-name cinzel-font">HEARTHLILY</span>
+                <span class="brand-chinese Noto Serif TC">晴萱 Family Hub</span>
+            </a>
+
+            <!-- Active Profile -->
+            <div class="client-profile-box">
+                <span class="profile-label" data-i18n="sidebar.profile">Active Senior Profile</span>
+                <div class="profile-name">Mrs. Lin (林黃秋月女士)</div>
+                <div class="profile-sub" data-i18n="sidebar.location">Da'an District, Taipei City</div>
+            </div>
+
+            <!-- Menu -->
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#feed" class="menu-link active">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span data-i18n="menu.feed">Activity Feed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#metrics" class="menu-link">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span data-i18n="menu.metrics">Wellness Metrics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#medical" class="menu-link">
+                        <i class="fa-solid fa-notes-medical"></i>
+                        <span data-i18n="menu.medical">Medical Escort Logs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#documents" class="menu-link">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span data-i18n="menu.docs">Document Vault</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <button id="langToggle" class="lang-btn">EN / 繁中</button>
+            <div style="font-size: 0.65rem; opacity: 0.5; text-align: center;">
+                &copy; 2026 Hearthlily Co.
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Panel -->
+    <main class="main-panel">
+        
+        <!-- Header -->
+        <header class="panel-header">
+            <div class="panel-title">
+                <h1 data-i18n="panel.title">Hearthlily Family Hub</h1>
+                <p data-i18n="panel.desc">Long-distance family care dashboard & visual client reporting portal.</p>
+            </div>
+            <span class="header-badge" data-i18n="panel.membership">Gold Hearth Subscriber</span>
+        </header>
+
+        <!-- Grid Dashboard -->
+        <div class="dashboard-grid">
+            
+            <!-- Left Side: Timeline Feed -->
+            <section id="feed" class="glass-card">
+                <div class="card-header-row">
+                    <h2 class="card-title">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span data-i18n="feed.title">Activity Feed & Visit Log</span>
+                    </h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge"><i class="fa-solid fa-palette"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-row">
+                                <span class="timeline-date">June 28, 2026</span>
+                                <span class="timeline-author" data-i18n="feed.curator">Curated by Felicia</span>
+                            </div>
+                            <h3 class="timeline-title" data-i18n="feed.item1.title">Exhibition Visit at Huashan 1914 & Digital Safe-Check</h3>
+                            <div class="timeline-body">
+                                <p data-i18n="feed.item1.p1">
+                                    Today, I accompanied Mrs. Lin to the contemporary oil painting gallery at Huashan 1914 Creative Park. She was in high spirits and spent nearly an hour analyzing the color compositions. Afterward, we stopped by a boutique tea house for warm cardamom oolong tea, which she thoroughly enjoyed.
+                                </p>
+                                <p data-i18n="feed.item1.p2" style="margin-top: 0.5rem;">
+                                    <strong>Digital Security Audit:</strong> During tea, we reviewed her LINE messages together. I successfully identified and deleted three spam phishing links disguised as municipal utility invoices, and coached her on how to spot the fake warning banners. Devices are secure.
+                                </p>
+                            </div>
+                            <div class="timeline-images">
+                                <img src="https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?auto=format&fit=crop&q=80&w=600" alt="Exhibition Art Outing" class="timeline-img">
+                                <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=80&w=600" alt="Teahouse check-in" class="timeline-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge"><i class="fa-solid fa-seedling"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta-row">
+                                <span class="timeline-date">June 24, 2026</span>
+                                <span class="timeline-author" data-i18n="feed.curator">Curated by Felicia</span>
+                            </div>
+                            <h3 class="timeline-title" data-i18n="feed.item2.title">Aesthetic Arrangement & Device Optimization</h3>
+                            <div class="timeline-body">
+                                <p data-i18n="feed.item2.p1">
+                                    Delivered fresh custom floral arrangements (white lilies, sage foliage, and miniature gold roses) to style her living room. The scent has significantly brightened the room, and Mrs. Lin mentioned it felt like walking into a luxury hotel lobby.
+                                </p>
+                                <p data-i18n="feed.item2.p2" style="margin-top: 0.5rem;">
+                                    <strong>UX Device Configuration:</strong> Completed the setup of her new iPad. I customized the home screen layout to hide all unused application icons, configured 150% text size magnification, set up high-contrast keyboard modes, and established automated cloud photo back-ups for her camera roll.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Side: Metrics & Contacts -->
+            <div>
+                <!-- Wellness Report Metrics -->
+                <section id="metrics" class="glass-card">
+                    <div class="card-header-row">
+                        <h2 class="card-title">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <span data-i18n="metrics.title">Wellness Index</span>
+                        </h2>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-name" data-i18n="metrics.tech">Digital Security</span>
+                            <div class="metric-score">8.5<span>/10</span></div>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.tech.status">Device optimized & spam-swept</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-name" data-i18n="metrics.social">Social Engagement</span>
+                            <div class="metric-score">9.0<span>/10</span></div>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.social.status">Exhibitions & active routines</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-name" data-i18n="metrics.health">Medical Escort</span>
+                            <div class="metric-score">9.5<span>/10</span></div>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.health.status">Prescriptions & booking tracked</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-name" data-i18n="metrics.delight">Aesthetic Vibe</span>
+                            <div class="metric-score">8.8<span>/10</span></div>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.delight.status">Fresh floral & lifestyle curation</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Medical Logs -->
+                <section id="medical" class="glass-card">
+                    <div class="card-header-row">
+                        <h2 class="card-title">
+                            <i class="fa-solid fa-hospital-user"></i>
+                            <span data-i18n="medical.title">Medical Accompaniment Logs</span>
+                        </h2>
+                    </div>
+
+                    <div class="medical-list">
+                        <!-- Med 1 -->
+                        <div class="medical-item">
+                            <div class="medical-icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div class="medical-details">
+                                <span class="medical-date">June 26, 2026</span>
+                                <div class="medical-facility">National Taiwan University Hospital (NTUH)</div>
+                                <div class="medical-doctor" data-i18n="medical.doc1">Cardiology Consultation - Dr. Wang</div>
+                                <div class="medical-notes" data-i18n="medical.note1">
+                                    Mrs. Lin's blood pressure is stable. Doctor adjusted her morning beta-blocker dosage slightly. I updated her pill-box organizer to match and mapped the next prescription pick-up on July 24. Next clinic visit: August 15.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Liaison -->
+                <section class="glass-card">
+                    <div class="card-header-row">
+                        <h2 class="card-title">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span data-i18n="liaison.title">Your Dedicated Curator</span>
+                        </h2>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="avatar-box">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" alt="Felicia Chang" class="avatar-img">
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-name">Felicia Chang</div>
+                            <div class="contact-title" data-i18n="liaison.role">Chief Life Curator</div>
+                        </div>
+                        <a href="mailto:concierge@hearthlily.tw" class="btn-message" data-i18n="liaison.btn">Email Felicia</a>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- JS Translation Engine -->
+    <script>
+        const translations = {
+            en: {
+                "sidebar.profile": "Active Senior Profile",
+                "sidebar.location": "Da'an District, Taipei City",
+                "menu.feed": "Activity Feed",
+                "menu.metrics": "Wellness Metrics",
+                "menu.medical": "Medical Escort Logs",
+                "menu.docs": "Document Vault",
+                "panel.title": "Hearthlily Family Hub",
+                "panel.desc": "Long-distance family care dashboard & visual client reporting portal.",
+                "panel.membership": "Gold Hearth Subscriber",
+                
+                "feed.title": "Activity Feed & Visit Log",
+                "feed.curator": "Curated by Felicia",
+                "feed.item1.title": "Exhibition Visit at Huashan 1914 & Digital Safe-Check",
+                "feed.item1.p1": "Today, I accompanied Mrs. Lin to the contemporary oil painting gallery at Huashan 1914 Creative Park. She was in high spirits and spent nearly an hour analyzing the color compositions. Afterward, we stopped by a boutique tea house for warm cardamom oolong tea, which she thoroughly enjoyed.",
+                "feed.item1.p2": "Digital Security Audit: During tea, we reviewed her LINE messages together. I successfully identified and deleted three spam phishing links disguised as municipal utility invoices, and coached her on how to spot the fake warning banners. Devices are secure.",
+                
+                "feed.item2.title": "Aesthetic Arrangement & Device Optimization",
+                "feed.item2.p1": "Delivered fresh custom floral arrangements (white lilies, sage foliage, and miniature gold roses) to style her living room. The scent has significantly brightened the room, and Mrs. Lin mentioned it felt like walking into a luxury hotel lobby.",
+                "feed.item2.p2": "UX Device Configuration: Completed the setup of her new iPad. I customized the home screen layout to hide all unused application icons, configured 150% text size magnification, set up high-contrast keyboard modes, and established automated cloud photo back-ups for her camera roll.",
+                
+                "metrics.title": "Wellness Index",
+                "metrics.tech": "Digital Security",
+                "metrics.tech.status": "Device optimized & safe",
+                "metrics.social": "Social Engagement",
+                "metrics.social.status": "Active & cultural outings",
+                "metrics.health": "Medical Escort",
+                "metrics.health.status": "Prescriptions & consults logged",
+                "metrics.delight": "Aesthetic Vibe",
+                "metrics.delight.status": "Custom flowers & styling",
+                
+                "medical.title": "Medical Accompaniment Logs",
+                "medical.doc1": "Cardiology Consultation - Dr. Wang",
+                "medical.note1": "Mrs. Lin's blood pressure is stable. Doctor adjusted her morning beta-blocker dosage slightly. I updated her pill-box organizer to match and mapped the next prescription pick-up on July 24. Next clinic visit: August 15.",
+                
+                "liaison.title": "Your Dedicated Curator",
+                "liaison.role": "Chief Life Curator",
+                "liaison.btn": "Email Felicia"
+            },
+            zh: {
+                "sidebar.profile": "在台長輩專屬檔案",
+                "sidebar.location": "台北市大安區",
+                "menu.feed": "日常照護與藝文動態",
+                "menu.metrics": "健康美感指標",
+                "menu.medical": "醫療門診跟診紀錄",
+                "menu.docs": "文件保管保險箱",
+                "panel.title": "晴萱家庭管家中心",
+                "panel.desc": "跨國高齡生活管家後台與互動式視覺生活報告書。",
+                "panel.membership": "金萱臻藏方案會員",
+                
+                "feed.title": "日常動態與伴行日誌",
+                "feed.curator": "生活策展人 Felicia 親自編撰",
+                "feed.item1.title": "華山1914藝文伴遊 與 智慧裝置防詐防護",
+                "feed.item1.p1": "今天下午，我陪同林媽媽前往華山1914文創園區參觀當代油畫展。林媽媽精神非常好，花費了將近一個小時細細品味畫作。觀展後，我們前往茶館享用小荳蔻烏龍茶，林媽媽感到非常放鬆與愉悅。",
+                "feed.item1.p2": "數位安全防護：在享用茶點期間，我們一起檢視了她的 LINE 訊息。我成功識別並刪除了三個偽裝成市政公用事業水電帳單的垃圾詐騙連結，並指導她未來如何辨識此類假警告條。目前所有行動裝置運作安全無虞。",
+                
+                "feed.item2.title": "家居花藝陳設 與 裝置使用體驗優化",
+                "feed.item2.p1": "今天為林媽媽的客廳送去精心設計的客製花藝擺設（白百合、鼠尾草綠葉與迷你金色玫瑰）。清雅的百合香氣顯著提亮了整體居住氣氛，林媽媽開心表示這讓家裡有一種入住頂級精品酒店大廳的儀式感。",
+                "feed.item2.p2": "高齡體驗數位優化：完成了她新 iPad 的初次設定。我重新設計了主螢幕版面配置，隱藏了所有用不到的 App，配置了 150% 的系統字型放大、高對比大鍵盤模式，並為相機相簿設定了自動雲端照片備份，方便與在海外的您共享生活點滴。",
+                
+                "metrics.title": "健康與生活品質指標",
+                "metrics.tech": "數位安全防禦",
+                "metrics.tech.status": "裝置安全、阻斷惡意彈出",
+                "metrics.social": "精神與藝文社交",
+                "metrics.social.status": "正常參與展覽、維持智識互動",
+                "metrics.health": "健康門診管理",
+                "metrics.health.status": "處方藥物與門診行事曆追蹤",
+                "metrics.delight": "美感生活體驗",
+                "metrics.delight.status": "花藝美化、高規格衣著儀式感",
+                
+                "medical.title": "門診跟診與醫囑詳細紀錄",
+                "medical.doc1": "心臟內科門診跟診 - 王醫師",
+                "medical.note1": "林媽媽血壓維持穩定。王醫師微調了早晨乙型阻斷劑的服藥劑量。我已同步更新林媽媽的日常藥盒分配以防漏藥，並排定了 7 月 24 日的下一次慢箋領藥。下回心臟科返診時間定為 8 月 15 日。",
+                
+                "liaison.title": "您的專屬生活管家",
+                "liaison.role": "首席生活策展人",
+                "liaison.btn": "聯絡 Felicia"
+            }
+        };
+
+        let currentLang = 'zh';
+
+        document.addEventListener("DOMContentLoaded", () => {
+            applyTranslations(currentLang);
+
+            document.getElementById("langToggle").addEventListener("click", () => {
+                currentLang = currentLang === 'en' ? 'zh' : 'en';
+                document.documentElement.lang = currentLang === 'en' ? 'en' : 'zh-TW';
+                applyTranslations(currentLang);
+            });
+        });
+
+        function applyTranslations(lang) {
+            const elementsToTranslate = document.querySelectorAll("[data-i18n]");
+            elementsToTranslate.forEach(element => {
+                const translationKey = element.getAttribute("data-i18n");
+                if (translations[lang][translationKey]) {
+                    element.innerHTML = translations[lang][translationKey];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
