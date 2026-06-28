@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hearthlily (晴萱) — Presentation Slides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #FDFBF7;
+      --primary-color: #5F7D6D;
+      --primary-light: #EBF0ED;
+      --accent-color: #D4AF37;
+      --text-color: #2C3531;
+      --light-text: #606864;
+      --border-color: #E2DDD5;
+      --card-bg: #FFFFFF;
+      --shadow: 0 10px 40px rgba(95, 125, 109, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      color: var(--text-color);
+      background-color: #1E2321;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    /* Presentation Container (16:9 Aspect Ratio) */
+    .presentation-container {
+      width: 100%;
+      max-width: 1100px;
+      height: 100%;
+      max-height: 620px;
+      aspect-ratio: 16 / 9;
+      background: var(--bg-color);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Slide Deck wrapper */
+    .slides-wrapper {
+      flex: 1;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Individual Slide */
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(50px);
+      transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.5s;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: var(--bg-color);
+      z-index: 1;
+    }
+
+    /* Active Slide State */
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+      z-index: 2;
+    }
+
+    /* Slide Header */
+    .slide-header {
+      margin-bottom: 30px;
+    }
+    
+    .slide-tag {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .slide-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      font-weight: 700;
+      display: inline-block;
+      position: relative;
+    }
+
+    .slide-title::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent-color);
+      border-radius: 2px;
+    }
+
+    /* Slide Content Styles */
+    .slide-content {
+      font-size: 1.1rem;
+      color: var(--light-text);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Grid Layouts inside slides */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    /* Card styling */
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .info-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Highlight badge */
+    .highlight-badge {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary-color);
+      padding: 15px 20px;
+      border-radius: 0 6px 6px 0;
+      margin: 15px 0;
+    }
+
+    .highlight-badge p {
+      margin: 0;
+      font-style: italic;
+      color: var(--primary-color);
+      font-size: 1.1rem;
+    }
+
+    .price-badge {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      background: #FDF9EA;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    /* Navigation Controls */
+    .presentation-controls {
+      height: 60px;
+      border-top: 1px solid var(--border-color);
+      padding: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #F8F6F1;
+      z-index: 10;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      color: var(--primary-color);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    .nav-btn:hover {
+      color: var(--accent-color);
+    }
+
+    .nav-btn:disabled {
+      color: #C0C8C4;
+      cursor: not-allowed;
+    }
+
+    .slide-indicators {
+      display: flex;
+      gap: 6px;
+    }
+
+    .indicator-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #D5DDD8;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .indicator-dot.active {
+      background: var(--primary-color);
+      transform: scale(1.3);
+    }
+
+    .progress-bar-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #EBF0ED;
+      z-index: 11;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: var(--primary-color);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    /* Specific Slide Styling */
+    .title-slide {
+      text-align: center;
+      align-items: center;
+    }
+
+    .title-slide h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: var(--primary-color);
+      margin-bottom: 5px;
+    }
+
+    .title-slide h2 {
+      font-size: 1.3rem;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .title-meta {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 25px;
+    }
+
+    .title-meta-item {
+      font-size: 0.95rem;
+      color: var(--light-text);
+      text-align: left;
+    }
+
+    .title-meta-item strong {
+      color: var(--text-color);
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 3px;
+    }
+
+    /* Keyboard tips */
+    .keyboard-tip {
+      position: absolute;
+      bottom: 75px;
+      font-size: 0.8rem;
+      color: #909894;
+      background: rgba(0,0,0,0.03);
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+    
+    li::marker {
+      color: var(--accent-color);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="presentation-container">
+    
+    <!-- Top Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Slides Wrapper -->
+    <div class="slides-wrapper">
+      
+      <!-- Slide 1: Title -->
+      <div class="slide title-slide active" data-index="0">
+        <span class="slide-tag">Business Proposal Presentation</span>
+        <h1>Hearthlily — 晴萱</h1>
+        <h2>Premium Senior Lifestyle Concierge</h2>
+        <p style="max-width: 600px; font-style: italic; font-size: 1.1rem;">
+          A design-led, non-clinical boutique care companion for Taipei's independent elderly, giving overseas & busy adult children ultimate peace of mind.
+        </p>
+        
+        <div class="title-meta">
+          <div class="title-meta-item">
+            <strong>Félicia</strong>
+            Founder & Design Lead
+          </div>
+          <div class="title-meta-item">
+            <strong>Morgan</strong>
+            Tech Lead & Systems
+          </div>
+          <div class="title-meta-item">
+            <strong>Taipei City</strong>
+            Target Region
+          </div>
+        </div>
+
+        <div class="keyboard-tip">💡 Tip: Use Left / Right arrow keys or Spacebar to navigate.</div>
+      </div>
+
+      <!-- Slide 2: The Opportunity -->
+      <div class="slide" data-index="1">
+        <div class="slide-header">
+          <span class="slide-tag">The Market Opportunity</span>
+          <h2 class="slide-title">Taipei's Super-Aged Reality</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div>
+              <p><strong>A Rapidly Aging Demographic:</strong></p>
+              <ul>
+                <li>Taiwan became a <strong>super-aged society</strong> in late 2025.</li>
+                <li><strong>Taipei City has the highest concentration in the country: 24.18% of residents are 65+</strong> (nearly 1 in 4).</li>
+                <li>Birth rates hit record lows for a tenth straight year, accelerating family care stress.</li>
+              </ul>
+            </div>
+            <div>
+              <p><strong>The Gap in Public Care (LTC 3.0):</strong></p>
+              <ul>
+                <li>Strictly means-tested and target-focused on severe disability.</li>
+                <li>Active, independent "young-old" seniors do not qualify.</li>
+                <li>Families exhaust quotas quickly and must self-pay.</li>
+              </ul>
+              <div class="highlight-badge" style="margin-top: 15px;">
+                <p>We occupy the premium middle ground, offering lifestyle care instead of medical sitting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Félicia's Moat -->
+      <div class="slide" data-index="2">
+        <div class="slide-header">
+          <span class="slide-tag">The Moat</span>
+          <h2 class="slide-title">Félicia's Core Advantages</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-3">
+            <div class="info-card">
+              <h4>1. Native Trust</h4>
+              <p>Being a Taiwanese citizen with local cultural and linguistic fluency clears the single largest obstacle in senior services: trust and family connection.</p>
+            </div>
+            <div class="info-card">
+              <h4>2. UX Family Report</h4>
+              <p>Applying your design background to create a structured digital report (mood logs, visit metrics, home safety) instead of messy LINE chats. It is our key retention tool.</p>
+            </div>
+            <div class="info-card">
+              <h4>3. Spatial Design</h4>
+              <p>A rare, high-ticket service line to ergonomically declutter and fall-proof seniors' homes for active longevity, while respecting a lifetime of memories.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Service Portfolio -->
+      <div class="slide" data-index="3">
+        <div class="slide-header">
+          <span class="slide-tag">Core Services</span>
+          <h2 class="slide-title">Three Tailored Service Lines</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-3">
+            <div class="info-card">
+              <h4>Hourly Concierge <span class="price-badge">NT$700/h</span></h4>
+              <p>Accompanying seniors to medical appointments, writing post-consultation reports, teaching digital safety/scam prevention, and assisting with admin/paperwork.</p>
+              <p style="font-size: 0.8rem; font-style: italic; margin-top: 10px;">*4-hour minimum for one-off clients.</p>
+            </div>
+            <div class="info-card">
+              <h4>Peace of Mind Retainers <span class="price-badge">Monthly</span></h4>
+              <p>Recurring subscriptions for long-distance parental care. Silver and Gold tiers provide consistent visits, priority booking, and the signature UX report.</p>
+            </div>
+            <div class="info-card">
+              <h4>Spatial Reorganization <span class="price-badge">NT$25k-50k</span></h4>
+              <p>Downsizing and safety-proofing homes. High-margin project work that leverages your interior styling and space planning skills directly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Subscription Retainers -->
+      <div class="slide" data-index="4">
+        <div class="slide-header">
+          <span class="slide-tag">Business Model</span>
+          <h2 class="slide-title">Monthly "Peace of Mind" Retainers</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div class="info-card">
+              <h4>Silver Subscription <span class="price-badge">NT$10,000 / mo</span></h4>
+              <ul style="margin: 5px 0 0 15px; font-size: 0.9rem;">
+                <li>~3 visits per month</li>
+                <li>Bi-weekly digital check-in call</li>
+                <li>Standard monthly report for children</li>
+                <li>Flexible shorter visits (no 4h minimum restriction)</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h4>Gold Subscription <span class="price-badge">NT$18,000 / mo</span></h4>
+              <ul style="margin: 5px 0 0 15px; font-size: 0.9rem;">
+                <li>~6 visits per month</li>
+                <li>Weekly check-ins & priority appointment booking</li>
+                <li><strong>Signature UX Family Report</strong> (rich metrics, calm design, actionable insights)</li>
+                <li>Flexible shorter visits & micro-errands</li>
+              </ul>
+            </div>
+          </div>
+          <div class="highlight-badge" style="margin-top: 20px;">
+            <p><strong>Note:</strong> Retainer hours are drawn from Félicia's billable capacity (112h/mo)—they do not stack on top of it, avoiding double-counting.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Operational Safety -->
+      <div class="slide" data-index="5">
+        <div class="slide-header">
+          <span class="slide-tag">Risk Mitigation</span>
+          <h2 class="slide-title">Safety, Transport & Trust Rules</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div>
+              <p><strong>Premium Transit Policy:</strong></p>
+              <ul>
+                <li><strong>Seniors are never transported on scooters.</strong></li>
+                <li>All transit during client hours uses taxis or premium VTC, billed directly to the client as a pass-through cost.</li>
+                <li>Félicia's scooter is strictly for solo admin errands.</li>
+              </ul>
+            </div>
+            <div>
+              <p><strong>Onboarding & Finance Safeguards:</strong></p>
+              <ul>
+                <li><strong>Zero Cash Handling:</strong> Staff never touch cash/passwords. All payments and reimbursement run via digital billing (LINE Pay, ECPay, or NewebPay).</li>
+                <li><strong>3-Document Signoff:</strong> Non-medical co-responsibility, emergency hospital authorization, and financial boundary sheets.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7: Financial Model -->
+      <div class="slide" data-index="6">
+        <div class="slide-header">
+          <span class="slide-tag">Financial Outlook</span>
+          <h2 class="slide-title">Solo Unit Economics (Month 9+)</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div>
+              <p><strong>Monthly Capacity:</strong> Max ~26 billable hours/week (~112h/month), blended rate NT$680/h.</p>
+              <ul style="font-size: 0.95rem;">
+                <li>Service revenue: 112h × NT$680 = <strong>NT$76,000/mo</strong></li>
+                <li>Project revenue (avg 1 spatial project): <strong>NT$20,000/mo</strong></li>
+                <li><strong>Mature Gross Revenue: ~NT$96,000/mo</strong> (range NT$95k–115k)</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <p><strong>Monthly Cash Summary:</strong></p>
+              <ul style="font-size: 0.9rem; margin-top: 5px;">
+                <li>Gross Revenue: NT$96,000</li>
+                <li>OPEX (Accountant, software, insurance, marketing): -NT$16,600</li>
+                <li>Income Tax Provision: -NT$9,000</li>
+                <li><strong>Net Profit (Solo): NT$70,000 – NT$90,000 / mo</strong></li>
+              </ul>
+              <p style="font-size: 0.8rem; font-style: italic; margin-top: 10px; color: var(--primary-color);">*Strong vs. Taipei's median net salary (NT$45k–55k).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 8: The Roadmap -->
+      <div class="slide" data-index="7">
+        <div class="slide-header">
+          <span class="slide-tag">Execution Plan</span>
+          <h2 class="slide-title">90-Day Launch & Scaling</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div>
+              <p><strong>90-Day Launch Plan:</strong></p>
+              <ol style="margin-left: 20px; font-size: 0.95rem;">
+                <li><strong>Days 1–30:</strong> Setup LLC, liability insurance, care-attendant course, legal contracts, and report template.</li>
+                <li><strong>Days 31–60:</strong> Pitch hospitals, clinics, and wealth advisors. Launch senior scam alerts. Land first 3 clients.</li>
+                <li><strong>Days 61–90:</strong> Convert one-offs to Gold retainers. Deliver reports. Complete first spatial project. Write playbook.</li>
+              </ol>
+            </div>
+            <div>
+              <p><strong>Year 2+ Scaling:</strong></p>
+              <ul>
+                <li><strong>Network Model:</strong> Hire and train 2–4 companion staff using the playbook. Félicia shifts to client relations & quality control.</li>
+                <li><strong>Fund Growth:</strong> Leverage the Young Entrepreneur Loan to fund team expansions without diluting equity.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls Footer -->
+    <div class="presentation-controls">
+      <button class="nav-btn" id="prevBtn" disabled>
+        ← Previous
+      </button>
+      
+      <div class="slide-indicators" id="slideIndicators">
+        <!-- Dots generated by JS -->
+      </div>
+      
+      <button class="nav-btn" id="nextBtn">
+        Next →
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slideIndicators = document.getElementById('slideIndicators');
+    const progressBar = document.getElementById('progressBar');
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    // Create Indicators
+    slides.forEach((slide, idx) => {
+      const dot = document.createElement('div');
+      dot.classList.add('indicator-dot');
+      if (idx === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(idx));
+      slideIndicators.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.indicator-dot');
+
+    function updateControls() {
+      prevBtn.disabled = currentSlide === 0;
+      nextBtn.disabled = currentSlide === totalSlides - 1;
+      
+      // Update Dots
+      dots.forEach((dot, idx) => {
+        if (idx === currentSlide) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.add('active');
+          dot.classList.remove('active');
+        }
+      });
+      
+      // Highlight current dot
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentSlide);
+      });
+
+      // Update Progress Bar
+      const progressPercent = ((currentSlide) / (totalSlides - 1)) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+    }
+
+    function goToSlide(index) {
+      if (index < 0 || index >= totalSlides) return;
+      
+      slides[currentSlide].classList.remove('active');
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+      
+      updateControls();
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        goToSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        goToSlide(currentSlide - 1);
+      }
+    }
+
+    // Event Listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Keyboard controls
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+      }
+    });
+
+    // Initialize progress bar
+    updateControls();
+  </script>
+</body>
+</html>
