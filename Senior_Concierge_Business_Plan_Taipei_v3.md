@@ -1,147 +1,155 @@
 # Business Plan v3 — Premium Senior Lifestyle Concierge
-### Taipei, Taiwan · 2026 · Luxury Pivot Consolidated Edition
+### Taipei, Taiwan · 2026 · Luxury-Tech Pivot Consolidated Edition
 
 *Prepared for Félicia (Taiwanese citizen, 37, UI/UX & Graphic Design background) · Currency: NT$ primary, € secondary at ≈ 34 NT$/€ · Starting budget ceiling: €10,000 ≈ NT$340,000*
 
-> **What changed in v3 (Luxury Pivot).** Following expert review of the early-stage model, this version represents a **complete pivot to an ultra-premium, low-volume, high-margin subscription business**. We have eliminated the commodity hourly rate model (which capped revenue and sent a "cheap" brand signal) and replaced it with luxury monthly retainers, a premium onboarding fee, and refined customer acquisition channels (luxury residential towers, private banks). We have also integrated the **Hearthlily Family Hub** app portal as the core visual value-driver and strengthened the legal risk-mitigation framework.
+> **What changed in v3 (Luxury-Tech Pivot).** Based on a thorough strategic audit, Hearthlily has pivoted from a classic hourly-rate service business to an **ultra-premium, tech-enabled private membership club**. We have integrated 10 critical structural upgrades: private membership pricing models (Essential, Signature, Legacy), a dedicated B2B distribution strategy (private banks, high-end real estate), an Emergency Preparedness Plan package, the proprietary **Hearth Score™** data model, an Overseas Family liaison program, and a long-term AI-assisted companion and certification roadmap.
 
 ---
 
 ## 1. Executive Summary
 
-**The business.** An ultra-premium, strictly non-medical boutique lifestyle concierge for affluent elderly residents of Taipei's elite districts (Da'an, Xinyi) — sold to their busy, high-earning, or overseas adult children who value trust, communication, and absolute peace of mind. Services include premium companionship, medical accompaniment, technology/anti-scam coaching, and digital legacy preservation. All interactions are coordinated and logged through the proprietary **Hearthlily Family Hub** client portal.
+**The business.** Hearthlily (晴萱) is an ultra-premium, tech-enabled private membership concierge for independent seniors in Taipei's wealthiest districts (Da'an, Xinyi). The service is purchased by their time-poor or overseas adult children who carry the deep emotional and cultural obligation of care (filial piety) but lack the physical proximity. 
 
-**The luxury positioning.** Hearthlily does not sell chores or hourly labor; it sells **filial reassurance, dignity, and visual connection**. By pricing at the luxury tier, the brand signals elite trust. The target is a maximum of **8–10 active clients** for the solo founder, ensuring high-touch execution, zero burn-out, and excellent margins.
+**The positioning.** We do not sell commodity care or chores; we sell **filial peace of mind, senior dignity, and visual connection**. By pricing at the luxury tier, Hearthlily signals elite trust and ensures a sustainable, high-margin, low-volume operation capped at **8–10 active families** for the solo founder.
 
-**Financials (Luxury Model).**
-- Startup Costs: ~NT$200,000 (€5,900) — easily covered by the starting capital.
-- **Onboarding Fee:** NT$20,000 (one-time setup & digital audit).
-- **Monthly Retainers:** NT$25,000 (Silver Lily) to NT$45,000 (Gold Hearth) per month.
-- **Hourly rate (extra hours):** NT$1,500/h.
-- **Mature Gross Revenue:** **~NT$280,000–310,000/month** (with only 8 subscription clients).
-- **Net Profit (Solo):** **~NT$220,000–250,000/month (€6,500–7,350)**.
+**The Hearthlily Family Hub.** Every membership includes access to a private, secure web portal where global families track daily visit timelines with photos, medical accompaniment logs, and the **Hearth Score™** (our proprietary lifestyle risk index).
+
+**Financials (Revised Luxury Model).**
+- Onboarding Fee: NT$20,000 (one-time Intake & Assessment).
+- Monthly Memberships: NT$25,000 (Essential) to NT$80,000 (Legacy) per month.
+- Emergency Preparedness Plan: NT$35,000 (one-time package).
+- **Expected Monthly Gross Revenue:** **~NT$310,000–340,000 / month** (with only 8 active members).
+- **Expected Monthly Net Profit (Solo):** **~NT$230,000–260,000 / month (€6,800–7,600)**.
 - Break-even: Month 3–4.
 
 ---
 
-## 2. Market & Competitor Analysis
+## 2. Market & Timing
 
-**Demographics.** Taipei City is super-aged, with **24.18% of the population aged 65+** (nearly 1 in 4). In high-wealth zones like Da'an and Xinyi, thousands of senior households possess significant real estate and savings, but their children are overworked corporate professionals or members of the diaspora living in North America/Europe.
+**The demographic catalyst.** Taipei City is super-aged, with **24.18% of the population aged 65+** (nearly 1 in 4). Elite districts contain massive private wealth, but senior residents face high vulnerability to financial fraud and digital exclusion, while their children reside in cities like San Francisco, London, Singapore, or Tokyo.
 
-**The purchasing driver.** Filial piety (孝順) creates a deep emotional obligation. Overseas or busy children suffer from "care guilt." They do not want to hire low-cost caregiver brokers, which have high worker churn and no English capability. They want a peer-level concierge who speaks fluent English, understands technology, and can interact with them as a professional partner.
-
-**The competitive landscape.** 
-- Public LTC 3.0 covers basic physical disability, leaving lifestyle curation untouched.
-- Migrant caregivers handle ADL (activities of daily living) but lack cultural, intellectual, and technical companionship.
-- Hourly platforms (NT$250–500/h) represent commodity labor.
-- **Hearthlily** positions itself at the top, charging **luxury subscription rates** (blended NT$1,200–1,500/h equivalent) to capture the elite market.
+**The purchasing driver.** Affluent families do not want the clinical, high-churn brokers or foreign caregivers associated with severe disability. They want a bilingual, tech-literate companion who can bridge the digital gap and provide structured, elegant feedback.
 
 ---
 
-## 3. Service Portfolio, Retainers & Pricing
+## 3. Position, Memberships & Pricing
 
-### A. One-Time Onboarding & Setup Fee — NT$20,000
-Every client relationship begins with a mandatory 30-day onboarding process:
-- A full digital security and device audit (phishing defense, interface simplification).
-- Initial wellness and mobility lifestyle assessment.
-- Creation of the family account on the secure **Hearthlily Family Hub** portal.
-- An in-person "Family Alignment Workshop" (conducted via video call for overseas children).
+We abandon hourly billing to avoid sending a cheap brand signal. We sell access, exclusivity, and security.
 
-### B. Monthly Subscription Retainers (The Core Revenue)
-Retainers represent recurring monthly revenue (MRR). Rather than rigid hourly blocks, hours are used flexibly (micro-visits, emergency runs, long excursions):
+### A. One-Time Onboarding Fee — NT$20,000
+Every client relationship begins with a mandatory 30-day onboarding audit:
+- A full digital security and device audit (phishing check, zoom/contrast UI configurations, security setups).
+- A home visit and mobility risk assessment.
+- Family intake interviews to establish preferences.
+- Activation of the secure **Hearthlily Family Hub** portal.
 
-*   **Silver Lily Retainer — NT$25,000 / month**
-    *   *Includes:* Up to 15 hours of active monthly companion/medical accompaniment, bi-weekly digital updates, and full access to the *Family Hub* timeline.
-*   **Gold Hearth Retainer (Signature Ultra) — NT$45,000 / month**
-    *   *Includes:* Up to 35 hours of dedicated active curation (gallery visits, boutique doctor escorts, custom floral deliveries), weekly comprehensive **UX Family Reports**, 24/7 dedicated family coordinator channel, and priority emergency booking.
-*   **Extra Hours:** Billed at **NT$1,500 / hour**.
+### B. Private Membership Tiers (Monthly Recurring Revenue)
+Retainer hours are flexible and drawn from Félicia's monthly active capacity (capped at 112 billable hours/month):
 
-### C. The Hearthlily Family Hub (Visual Moat)
-Designed by Félicia, this private, secure web portal is the ultimate value-driver:
-- **Activity Feed:** A private timeline with photos and logs updated after each visit, showing outings and daily delight metrics.
-- **Medical Escort Logs:** Bullet-point clinic summaries, medication changes, and next appointments.
-- **Wellness Index:** A simple, metrics-driven dashboard scoring four categories: Digital Security, Social/Mental Engagement, Medical Navigation, and Aesthetic Vibe.
+*   **Essential Membership — NT$25,000 / month**
+    *   *Includes:* 4 curated visits per month, monthly standard lifestyle check, bi-weekly digital update calls, and access to the *Family Hub* timeline.
+*   **Signature Membership (Best Value) — NT$45,000 / month**
+    *   *Includes:* Weekly curated active companion visits (up to 35 hours/month of flex active presence), full medical consultation accompaniment and log summaries, digital safety sweeps, and weekly **UX Family Reports**.
+*   **Legacy Membership (Ultra-Luxury) — NT$80,000 / month**
+    *   *Includes:* High-frequency lifestyle curation (daily check-ins/excursions, up to 70 hours/month), 24/7 dedicated liaison, family governance facilitation, legacy photo archiving, and legal/succession coordination.
+*   **Out-of-Plan Extra Hours:** NT$1,500 / hour.
 
-### D. High-Ticket Projects — "Digital Legacy & Memory Preservation" — NT$15,000–35,000
-For non-retainer clients, a stand-alone project to organize a senior's digital life:
-- Consolidating family photos and videos from old devices/SD cards into secure shared cloud vaults.
-- UI simplification of tablets and smartphones to remove ad noise and prevent accidental inputs.
-
----
-
-## 4. Operations, Logistics & Risk Management
-
-### 4.1 Premium Transport Policy
-- **Seniors are never transported on scooters.** All client sessions use pre-booked premium taxis or VTC services, billed directly to the client's credit card as a pass-through cost (zero margin, zero expense for Hearthlily).
-
-### 4.2 Legal Risk-Mitigation Framework
-1.  **Three-Document Onboarding:** Standard contract package includes:
-    - *Non-Medical Co-Responsibility Agreement:* Explicitly defining the service as non-clinical.
-    - *Emergency 119 Protocol:* Pre-authorizing immediate emergency medical transit.
-    - *Financial Boundary Charter:* Strictly forbidding staff from handling cash, physical checkbooks, or banking passwords. All billing and reimbursements run through local payment gateways (NewebPay / ECPay).
-2.  **Insurance:** High-limit professional liability and third-party accident insurance (NT$5,000,000+ coverage limit).
-3.  **Standard Operating Procedures (SOPs):** Standardized incident reporting, automated check-in logs, and a clear escalation matrix (Felicia → Family → Emergency Services).
+### C. Emergency Preparedness Package (One-off) — NT$35,000
+A high-ticket standalone product to prepare for family crises:
+- Centralization of all medical records, prescription timelines, and doctor contacts.
+- Creation of a certified Emergency Contact Directory and hospital preference list.
+- Standardized rapid-action protocols and legally binding authorization documents.
+- Integration of the **Emergency Response Drawer** in the *Family Hub* app.
 
 ---
 
-## 5. Marketing & High-Trust Acquisition
+## 4. Technology & Curation Moats
 
-We bypass slow hospital pipelines and target **high-wealth gatekeepers and luxury environments**:
+### 4.1 The Hearth Score™ (Lifestyle Data Model)
+Visits generate structured data. Félicia rates four dimensions in the *Family Hub* to output a consolidated health index:
+- **Digital Security:** Phishing exposure, app safety, digital account hygiene.
+- **Social Engagement:** Exposure to arts, outings, and intellectual stimulation.
+- **Medical Navigation:** Consultation frequency, medication compliance.
+- **Aesthetic Delight:** Moral, styling, and visual environment quality.
+*This data turns care into a measurable metric, making it easy for overseas families to justify up-selling services when scores decline.*
 
-1.  **Luxury Residential Towers (Da'an & Xinyi):** Build partnerships with the property management companies and concierges of elite residential towers (e.g., *One Park Taipei*, *Xinyi Residential*). Provide brochures and present Hearthlily as the official lifestyle care partner for their senior residents.
-2.  **Private Wealth Advisors & Family Offices:** Pitch to wealth managers at premier local banks (Taishin, Fubon, E.Sun) and family offices. They seek high-value lifestyle concierge add-ons to retain aging HNW depositors.
-3.  **High-End Community Hubs:** Network through the Taipei American Club (TAC), Rotary Clubs, and premium elder-law firms handling succession planning.
+### 4.2 AI + Human Integration (Roadmap Year 2)
+We will implement an **AI Hearth Assistant** to:
+- Automatically summarize visit logs into timezone-friendly audio/text bulletins for children.
+- Analyze long-term Hearth Scores to detect anomalies (e.g., sudden drop in social engagement or increased digital scam inputs) and trigger warnings.
 
 ---
 
-## 6. Financial Projections (Luxury Model)
+## 5. Operations & Legal Safeguards
 
-### 6.1 Startup Budget (One-Time)
+### 5.1 Premium Transport Policy
+Seniors are **never transported on scooters**. All client sessions use pre-booked premium VTCs or taxis, charged directly to the client's credit card as a pass-through cost (zero opex for Hearthlily).
+
+### 5.2 Legal Risk Shielding
+- *Professional Liability:* Standard policy with NT$5,000,000+ coverage.
+- *Three-Part Legal Package:* Non-Medical Co-Responsibility Agreement, Emergency Hospitalization Protocol, and a strict Financial Boundary policy (preventing companion access to cash or banking passwords).
+
+### 5.3 Operating Manual (SOPs)
+To prevent the founder bottleneck, all operations are codified in the **Hearthlily Operating Manual** (visit SOPs, reporting templates, tone-of-voice guide, escalation matrices). This allows Félicia to transition from operator to brand director in Year 2.
+
+---
+
+## 6. Distribution & Marketing Channels
+
+We focus on scalable B2B partnerships rather than slow clinical systems:
+
+1.  **Luxury Residential Towers (Da'an/Xinyi):** Pitch Hearthlily as an exclusive resident amenity to premium property developers (Ruentex, Radium).
+2.  **Private Wealth Advisors:** Partner with private banks (Taishin, Fubon, E.Sun) as an exclusive value-add concierge service for their VIP depositor networks.
+3.  **Diaspora Target Marketing:** Run targeted campaigns for Taiwanese professionals in the US, Europe, and Japan, emphasizing emotional copywriting:
+    - *"When you can't be there, we can."*
+    - *"Dignified lifestyle curation. Stay close, even from afar."*
+
+---
+
+## 7. Financial Projections
+
+### 7.1 Startup Budget (One-Time)
 
 | Item | NT$ | € (≈) |
 |---|---|---|
-| LLC Registration, Accountant & Legal Setup | 25,000 | 735 |
-| Care Attendant Certification & First Aid | 12,000 | 350 |
+| LLC Registration & Accountant Setup | 25,000 | 735 |
+| Care Attendant Course & First Aid Certs | 12,000 | 350 |
 | Professional Liability Insurance (Year 1) | 30,000 | 880 |
-| Brand Identity, Web Portal & Family Hub Tech | 45,000 | 1,320 |
-| Premium B2B Marketing Materials & Print Portfolios | 38,000 | 1,120 |
+| Brand Identity, Web Portal & Family Hub Tech Setup | 45,000 | 1,320 |
+| Premium B2B Marketing Materials & Portfolios | 38,000 | 1,120 |
 | Used Scooter (Founder solo errands only) | 35,000 | 1,030 |
-| Emergency Cash/Kit | 15,000 | 440 |
+| Emergency Cash Reserve | 15,000 | 440 |
 | **Hard Startup Total** | **~200,000** | **~5,875** |
 
-### 6.2 Mature Solo Projections (Month 9+)
-Target client load: **8 subscription clients** (5 Silver, 3 Gold) + occasional project/onboarding flow.
-- Billable active hours required: ~180 hours/month across the pool.
+### 7.2 Mature Solo Projections (Month 9+)
+Assuming a portfolio of **8 active members** (4 Essential, 3 Signature, 1 Legacy) + 1 new client setup/onboarding flow every two months:
 
 **Monthly Revenue:**
-- 5 Silver Lily Retainers (5 × NT$25,000) = NT$125,000
-- 3 Gold Hearth Retainers (3 × NT$45,000) = NT$135,000
-- Setup Fees / Digital Legacy Projects (avg 1 new client every 2 months) = NT$20,000
-- Extra Hours / Special Curation = NT$15,000
-- **Expected Monthly Gross Revenue:** **NT$295,000 / month**
+- 4 Essential Memberships (4 × NT$25,000) = NT$100,000
+- 3 Signature Memberships (3 × NT$45,000) = NT$135,000
+- 1 Legacy Membership (1 × NT$80,000) = NT$80,000
+- Setup Fees / Emergency Packages (Averaged monthly) = NT$25,000
+- Extra Curation Hours = NT$10,000
+- **Expected Monthly Gross Revenue:** **NT$350,000 / month**
 
 **Monthly Operating Costs:**
-- Accountant: NT$4,000
-- Software, Hosting & Secure Portal Maintenance: NT$5,000
-- Premium Client Gifts, Fresh Flowers & Curation Supplies: NT$8,000
-- Targeted B2B Marketing & Partnerships: NT$5,000
-- **Operating subtotal (OPEX):** **NT$22,000**
-- Income-Tax Provision: ~NT$35,000
-- **Expected Net Profit (Solo):** **~NT$238,000 / month (€7,000)**
+- Accountant & Tax Compliance: NT$4,000
+- Software, Portal Hosting & AI API services: NT$6,500
+- Premium Client Gifts, Curation Supplies & Fresh Flowers: NT$9,500
+- B2B Partnership Marketing: NT$5,000
+- **Operating subtotal (OPEX):** **NT$25,000**
+- Income-Tax Provision: ~NT$45,000
+- **Expected Net Profit (Solo):** **~NT$280,000 / month (€8,200)**
 
 ---
 
-## 7. Scaling Roadmap (Year 2+)
+## 8. Scaling Roadmap (Year 2+)
 
-1.  **Solo Luxury Excellence (Year 1):** Stabilize the brand with 8–10 premium clients. Solidify the *Hearthlily Family Hub* workflow.
-2.  **The "Curated Curators" Network (Year 2):** To break the solo time barrier, recruit bilingual junior curators (such as luxury hospitality graduates).
-    - Client pays Hearthlily's subscription rates (equivalent to NT$1,500/h).
-    - Junior curator is paid NT$700–800/h.
-    - Hearthlily retains the NT$700–800/h margin.
-    - Félicia focuses entirely on initial audits, client relationship management, and reviewing the UX Family Reports.
-3.  **Expansion (Year 3):** Scale the technology platform (Family Hub) to other cities or white-label the software for premium nursing homes and international care agencies.
+1.  **Curated Curators Network (Y2):** Recruit bilingual companion staff (paid NT$700–800/h). Hearthlily bills at NT$1,500/h equivalent via memberships. Félicia acts as quality auditor and relationship manager.
+2.  **Hearthlily Certified Companion™ (Y3):** Shift to a franchise model. Certify independent concierges in our SOPs, software, and brand guidelines, scaling across Taiwan and other super-aged Asian cities (Tokyo, Seoul, Singapore).
 
 ---
 
 ### Sources & Notes
-Demographic data: Taipei City Department of Civil Affairs (super-aged statistics). Market rates: Private banking concierge comparisons and Taipei expatriate pricing sheets. This plan is for conceptual and strategy design purposes; consult local Taiwanese legal, tax, and insurance specialists before formal launch.
+Taipei City Civil Affairs statistics. SME Young Entrepreneur Loan parameters. For informational purposes; validate all contracts and insurance coverage with local Taiwanese professionals prior to launch.

@@ -365,7 +365,7 @@
             border: 1px solid var(--border-color);
         }
 
-        /* Metrics Widget */
+        /* Hearth Score Dashboard */
         .metrics-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -379,6 +379,12 @@
             padding: 1.25rem;
             text-align: center;
             box-shadow: var(--shadow-subtle);
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-2px);
         }
 
         .metric-score {
@@ -465,6 +471,66 @@
             border-radius: 6px;
             line-height: 1.5;
             border-left: 3px solid var(--color-sage);
+        }
+
+        /* Emergency Preparedness Widget */
+        .emergency-banner {
+            background: linear-gradient(135deg, #C0392B, #E74C3C);
+            color: var(--color-cream);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 25px rgba(192, 57, 43, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .emergency-icon {
+            font-size: 2.25rem;
+            color: var(--color-cream);
+            animation: pulse 2s infinite;
+        }
+
+        .emergency-details h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .emergency-details p {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            margin-top: 0.25rem;
+            line-height: 1.4;
+        }
+
+        .emergency-btn {
+            background-color: var(--color-cream);
+            color: #C0392B;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .emergency-btn:hover {
+            background-color: var(--color-cream-dark);
+            transform: scale(1.05);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
         }
 
         /* Direct Contact Widget */
@@ -606,7 +672,7 @@
                 <li>
                     <a href="#metrics" class="menu-link">
                         <i class="fa-solid fa-chart-line"></i>
-                        <span data-i18n="menu.metrics">Wellness Metrics</span>
+                        <span data-i18n="menu.metrics">Hearth Score™</span>
                     </a>
                 </li>
                 <li>
@@ -641,8 +707,18 @@
                 <h1 data-i18n="panel.title">Hearthlily Family Hub</h1>
                 <p data-i18n="panel.desc">Long-distance family care dashboard & visual client reporting portal.</p>
             </div>
-            <span class="header-badge" data-i18n="panel.membership">Gold Hearth Subscriber</span>
+            <span class="header-badge" data-i18n="panel.membership">Signature Membership</span>
         </header>
+
+        <!-- Emergency Preparedness Drawer Banner -->
+        <div class="emergency-banner">
+            <i class="fa-solid fa-triangle-exclamation emergency-icon"></i>
+            <div class="emergency-details" style="flex-grow: 1;">
+                <h3 data-i18n="emergency.title">Emergency Preparedness Plan</h3>
+                <p data-i18n="emergency.desc">Secure medical files, emergency liaison channels, rapid action protocols, and hospital preference sheets are active.</p>
+            </div>
+            <button class="emergency-btn" onclick="alert('Emergency Protocol Active. Contacting Felicia Chang and calling 119.')" data-i18n="emergency.btn">View File</button>
+        </div>
 
         <!-- Grid Dashboard -->
         <div class="dashboard-grid">
@@ -710,7 +786,7 @@
                     <div class="card-header-row">
                         <h2 class="card-title">
                             <i class="fa-solid fa-heart-pulse"></i>
-                            <span data-i18n="metrics.title">Wellness Index</span>
+                            <span data-i18n="metrics.title">Hearth Score™ Dashboard</span>
                         </h2>
                     </div>
 
@@ -718,23 +794,26 @@
                         <div class="metric-card">
                             <span class="metric-name" data-i18n="metrics.tech">Digital Security</span>
                             <div class="metric-score">8.5<span>/10</span></div>
-                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.tech.status">Device optimized & spam-swept</p>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.tech.status">Device optimized & safe</p>
                         </div>
                         <div class="metric-card">
                             <span class="metric-name" data-i18n="metrics.social">Social Engagement</span>
                             <div class="metric-score">9.0<span>/10</span></div>
-                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.social.status">Exhibitions & active routines</p>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.social.status">Active & cultural outings</p>
                         </div>
                         <div class="metric-card">
                             <span class="metric-name" data-i18n="metrics.health">Medical Escort</span>
                             <div class="metric-score">9.5<span>/10</span></div>
-                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.health.status">Prescriptions & booking tracked</p>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.health.status">Prescriptions & consults logged</p>
                         </div>
                         <div class="metric-card">
                             <span class="metric-name" data-i18n="metrics.delight">Aesthetic Vibe</span>
                             <div class="metric-score">8.8<span>/10</span></div>
-                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.delight.status">Fresh floral & lifestyle curation</p>
+                            <p style="font-size: 0.7rem; opacity: 0.7;" data-i18n="metrics.delight.status">Custom flowers & styling</p>
                         </div>
+                    </div>
+                    <div style="margin-top: 1.25rem; font-size: 0.75rem; text-align: center; color: var(--color-sage);">
+                        <i class="fa-solid fa-circle-info"></i> <span data-i18n="metrics.caption">Scores updated live based on visit observations.</span>
                     </div>
                 </section>
 
@@ -796,13 +875,17 @@
                 "sidebar.profile": "Active Senior Profile",
                 "sidebar.location": "Da'an District, Taipei City",
                 "menu.feed": "Activity Feed",
-                "menu.metrics": "Wellness Metrics",
+                "menu.metrics": "Hearth Score™",
                 "menu.medical": "Medical Escort Logs",
                 "menu.docs": "Document Vault",
                 "panel.title": "Hearthlily Family Hub",
                 "panel.desc": "Long-distance family care dashboard & visual client reporting portal.",
-                "panel.membership": "Gold Hearth Subscriber",
+                "panel.membership": "Signature Membership",
                 
+                "emergency.title": "Emergency Preparedness Plan",
+                "emergency.desc": "Secure medical files, emergency liaison channels, rapid action protocols, and hospital preference sheets are active.",
+                "emergency.btn": "View Plan",
+
                 "feed.title": "Activity Feed & Visit Log",
                 "feed.curator": "Curated by Felicia",
                 "feed.item1.title": "Exhibition Visit at Huashan 1914 & Digital Safe-Check",
@@ -813,7 +896,7 @@
                 "feed.item2.p1": "Delivered fresh custom floral arrangements (white lilies, sage foliage, and miniature gold roses) to style her living room. The scent has significantly brightened the room, and Mrs. Lin mentioned it felt like walking into a luxury hotel lobby.",
                 "feed.item2.p2": "UX Device Configuration: Completed the setup of her new iPad. I customized the home screen layout to hide all unused application icons, configured 150% text size magnification, set up high-contrast keyboard modes, and established automated cloud photo back-ups for her camera roll.",
                 
-                "metrics.title": "Wellness Index",
+                "metrics.title": "Hearth Score™ Dashboard",
                 "metrics.tech": "Digital Security",
                 "metrics.tech.status": "Device optimized & safe",
                 "metrics.social": "Social Engagement",
@@ -822,6 +905,7 @@
                 "metrics.health.status": "Prescriptions & consults logged",
                 "metrics.delight": "Aesthetic Vibe",
                 "metrics.delight.status": "Custom flowers & styling",
+                "metrics.caption": "Scores updated live based on visit observations.",
                 
                 "medical.title": "Medical Accompaniment Logs",
                 "medical.doc1": "Cardiology Consultation - Dr. Wang",
@@ -835,13 +919,17 @@
                 "sidebar.profile": "在台長輩專屬檔案",
                 "sidebar.location": "台北市大安區",
                 "menu.feed": "日常照護與藝文動態",
-                "menu.metrics": "健康美感指標",
+                "menu.metrics": "Hearth Score™ 指標",
                 "menu.medical": "醫療門診跟診紀錄",
                 "menu.docs": "文件保管保險箱",
                 "panel.title": "晴萱家庭管家中心",
                 "panel.desc": "跨國高齡生活管家後台與互動式視覺生活報告書。",
-                "panel.membership": "金萱臻藏方案會員",
+                "panel.membership": "Signature 專屬會員",
                 
+                "emergency.title": "高齡緊急醫療應變計畫",
+                "emergency.desc": "整合病歷數位檔、緊急聯絡網絡、緊急就醫偏好及急症應變SOP已全部啟動並建檔。",
+                "emergency.btn": "檢視應變檔",
+
                 "feed.title": "日常動態與伴行日誌",
                 "feed.curator": "生活策展人 Felicia 親自編撰",
                 "feed.item1.title": "華山1914藝文伴遊 與 智慧裝置防詐防護",
@@ -852,7 +940,7 @@
                 "feed.item2.p1": "今天為林媽媽的客廳送去精心設計的客製花藝擺設（白百合、鼠尾草綠葉與迷你金色玫瑰）。清雅的百合香氣顯著提亮了整體居住氣氛，林媽媽開心表示這讓家裡有一種入住頂級精品酒店大廳的儀式感。",
                 "feed.item2.p2": "高齡體驗數位優化：完成了她新 iPad 的初次設定。我重新設計了主螢幕版面配置，隱藏了所有用不到的 App，配置了 150% 的系統字型放大、高對比大鍵盤模式，並為相機相簿設定了自動雲端照片備份，方便與在海外的您共享生活點滴。",
                 
-                "metrics.title": "健康與生活品質指標",
+                "metrics.title": "Hearth Score™ 綜合評估指標",
                 "metrics.tech": "數位安全防禦",
                 "metrics.tech.status": "裝置安全、阻斷惡意彈出",
                 "metrics.social": "精神與藝文社交",
@@ -861,6 +949,7 @@
                 "metrics.health.status": "處方藥物與門診行事曆追蹤",
                 "metrics.delight": "美感生活體驗",
                 "metrics.delight.status": "花藝美化、高規格衣著儀式感",
+                "metrics.caption": "評估指標由生活策展人每次探視後即時更新。",
                 
                 "medical.title": "門診跟診與醫囑詳細紀錄",
                 "medical.doc1": "心臟內科門診跟診 - 王醫師",
