@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hearthlily (晴萱) — V4 Final Business Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #FDFBF7;
+      --primary-color: #5F7D6D;
+      --primary-light: #EBF0ED;
+      --accent-color: #D4AF37;
+      --text-color: #2C3531;
+      --light-text: #606864;
+      --border-color: #E2DDD5;
+      --card-bg: #FFFFFF;
+      --shadow: 0 4px 20px rgba(95, 125, 109, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      color: var(--text-color);
+      background-color: #F3F1EC;
+      line-height: 1.6;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Page Setup for Screen View */
+    .page-container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: var(--bg-color);
+      padding: 80px 100px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background-color: #FFFFFF;
+      }
+      .page-container {
+        margin: 0;
+        padding: 40px 50px;
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+        background: #FFFFFF;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+
+    /* Print Guide Banner */
+    .print-banner {
+      max-width: 850px;
+      margin: 20px auto 0 auto;
+      background: var(--primary-color);
+      color: #FFFFFF;
+      padding: 15px 20px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .print-banner p {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .print-btn {
+      background: var(--accent-color);
+      color: var(--text-color);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      transition: background 0.2s;
+    }
+    .print-btn:hover {
+      background: #C49F2D;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.15;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 8px;
+      margin: 40px 0 20px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 25px 0 12px 0;
+      color: var(--primary-color);
+    }
+
+    p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      color: var(--light-text);
+      text-align: justify;
+    }
+
+    strong {
+      color: var(--text-color);
+      font-weight: 600;
+    }
+
+    /* Layout Components */
+    .cover-section {
+      text-align: center;
+      padding: 100px 0 80px 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 40px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 50px;
+      padding: 25px;
+      background: var(--primary-light);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .meta-grid-item {
+      font-size: 0.95rem;
+      color: var(--primary-color);
+    }
+    .meta-grid-item strong {
+      color: var(--primary-color);
+    }
+
+    .highlight-box {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary-color);
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-style: italic;
+      color: var(--primary-color);
+      font-size: 1.1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: 25px 0;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    /* Lists */
+    ul, ol {
+      margin: 15px 0 25px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--light-text);
+      font-size: 1.05rem;
+    }
+
+    li::marker {
+      color: var(--accent-color);
+    }
+
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background-color: var(--primary-color);
+      color: #FFFFFF;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    tr {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    tr:nth-child(even) {
+      background-color: #FAF9F6;
+    }
+
+    tr:last-child {
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    /* Steps Layout */
+    .steps-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 20px;
+    }
+
+    .step-number {
+      background: var(--primary-color);
+      color: #FFFFFF;
+      font-weight: 700;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+
+    .step-content h4 {
+      font-size: 1.1rem;
+      color: var(--text-color);
+      margin-bottom: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Print Helper Banner -->
+  <div class="print-banner no-print">
+    <p>💡 <strong>Tip:</strong> Press <strong>Ctrl + P</strong> (or Cmd + P) and choose <strong>"Save as PDF"</strong> to generate the full PDF document.</p>
+    <button class="print-btn" onclick="window.print()">Print Full Plan</button>
+  </div>
+
+  <div class="page-container">
+    
+    <!-- Cover Page -->
+    <div class="cover-section">
+      <h1>Hearthlily — 晴萱</h1>
+      <div class="subtitle" style="margin-top: 15px;">Private Family Office for Aging</div>
+      <div style="font-size: 1.25rem; font-style: italic; color: var(--light-text); max-width: 550px; margin: 30px auto 0 auto; line-height: 1.5;">
+        "When you can’t be there, we can."<br>
+        Care, dignity, and peace of mind for the people who raised you.
+      </div>
+      
+      <div class="meta-grid">
+        <div class="meta-grid-item">👤 <strong>Founder & Creative Director:</strong> Félicia</div>
+        <div class="meta-grid-item">📍 <strong>Location:</strong> Taipei, Taiwan</div>
+        <div class="meta-grid-item">📈 <strong>Version:</strong> V4 – Final Strategic & Operational Plan</div>
+        <div class="meta-grid-item">📅 <strong>Date:</strong> June 2026</div>
+      </div>
+    </div>
+
+    <!-- Page Break for Cover -->
+    <div class="page-break"></div>
+
+    <!-- 1. Executive Summary -->
+    <h2>Executive Summary</h2>
+    <p>
+      Hearthlily is an <strong>ultra-premium, design-led Private Family Office for Aging</strong> based in Taipei. We do not sell caregiving hours or domestic help. We sell **absolute peace of mind, dignity, and visual connection** to affluent families — particularly those with members living abroad.
+    </p>
+    <p>
+      By acting as a trusted, high-touch local representative, we help families manage the aging of their parents with clarity, confidence, and elegance.
+    </p>
+    
+    <h3>Core Model</h3>
+    <ul>
+      <li>Limited to a maximum of <strong>12 families</strong> (scarcity as a feature).</li>
+      <li>High-touch, subscription-based membership.</li>
+      <li>Strong emphasis on **design intelligence** (beautiful reporting) and **ethical technology** (co-learning rather than surveillance).</li>
+      <li>Founder-led in Year 1 for maximum quality and relationship depth.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p><strong>Mission:</strong> Preserve independence, dignity, and intergenerational connection during aging — through human trust, intelligent systems, and beautiful communication.</p>
+    </div>
+
+    <!-- 2. The Problem -->
+    <h2>The Problem</h2>
+    <p>
+      Taiwan is one of Asia’s fastest-aging societies. Taipei has one of the highest concentrations of residents aged 65+ in the country. Several structural trends create a painful gap for affluent families:
+    </p>
+    <ul>
+      <li><strong>Shrinking family support</strong> — Many parents now have only one child, often living far away.</li>
+      <li><strong>Geographic separation</strong> — Adult children in the US, Europe, Singapore, or Japan experience constant guilt and anxiety.</li>
+      <li><strong>Digital vulnerability</strong> — Seniors are increasingly targeted by sophisticated scams (LINE, banking, impersonation).</li>
+      <li><strong>Emotional isolation</strong> — Loneliness accelerates cognitive and physical decline.</li>
+      <li><strong>Information asymmetry</strong> — Families often discover problems too late because they lack reliable, nuanced visibility.</li>
+    </ul>
+    
+    <h3>Current Inadequate Solutions</h3>
+    <ul>
+      <li><strong>Domestic helpers</strong> — Good for chores, poor at judgment and reporting.</li>
+      <li><strong>Traditional care agencies</strong> — Transactional and focused on dependency.</li>
+      <li><strong>Doing it remotely</strong> — Leads to burnout, guilt, and anxiety for the children.</li>
+    </ul>
+    <p>
+      <strong>The market gap</strong> is clear: There is no premium service that combines high emotional intelligence, design quality, and operational rigor between basic caregiving and a full family office.
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 3. Our Solution -->
+    <h2>Our Solution: Private Family Office for Aging</h2>
+    <p>
+      Hearthlily becomes the family’s <strong>trusted local representative</strong> — a discreet, intelligent, and aesthetically refined partner. We integrate five core pillars into one seamless service:
+    </p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">Pillar</th>
+          <th style="width: 45%;">What We Deliver</th>
+          <th style="width: 30%;">Outcome for the Family</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Physical Safety</strong></td>
+          <td>Home hazard detection, fall prevention, mobility support</td>
+          <td>Reduced risk of crisis</td>
+        </tr>
+        <tr>
+          <td><strong>Vitality</strong></td>
+          <td>Monitoring of energy, appetite, cognition, and routines</td>
+          <td>Early detection of decline</td>
+        </tr>
+        <tr>
+          <td><strong>Connection</strong></td>
+          <td>Companionship, outings, social stimulation, facilitated family calls</td>
+          <td>Reduced isolation</td>
+        </tr>
+        <tr>
+          <td><strong>Digital Security</strong></td>
+          <td>Co-learning scam defense, device simplification, password safety</td>
+          <td>Protection without infantilization</td>
+        </tr>
+        <tr>
+          <td><strong>Clarity & Connection</strong></td>
+          <td>Beautiful, structured reporting + Family Hub</td>
+          <td>Peace of mind and visibility</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 4. Founder Story -->
+    <h2>Founder Story</h2>
+    <p>
+      Hearthlily was founded by <strong>Félicia</strong>, a Taiwanese designer and systems thinker with deep expertise in UI/UX and human-centered design.
+    </p>
+    <p>
+      She observed that affluent families don’t just need care — they need <strong>visibility, trust, and interpretation</strong>. Traditional services fail to translate the subtle, day-to-day reality of aging into something clear and emotionally reassuring for distant children.
+    </p>
+    <p>
+      Her design background allows Hearthlily to transform intangible care into <strong>visible intelligence</strong> — through elegant reporting, thoughtful rituals, and a brand experience that feels like an extension of the family itself.
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 5. Membership Model & Pricing -->
+    <h2>Membership Model & Pricing</h2>
+    <p>
+      Hearthlily deliberately limits capacity to protect quality and exclusivity. 
+      <strong>Annual Scarcity Policy:</strong> Maximum 12 new families accepted per year.
+    </p>
+
+    <h3>Entry Packages (One-time)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 35%;">Package</th>
+          <th style="width: 20%;">Fee</th>
+          <th style="width: 45%;">Includes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Private Family Assessment</strong></td>
+          <td>NT$30,000</td>
+          <td>Home visit, family interviews, device & scam audit, baseline Hearth Score, Family Hub activation.</td>
+        </tr>
+        <tr>
+          <td><strong>Emergency Preparedness Package</strong></td>
+          <td>NT$50,000</td>
+          <td>Medical records organization, crisis protocols, legal authorizations, emergency contact mapping.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Monthly Membership Tiers</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Tier</th>
+          <th style="width: 20%;">Monthly Fee</th>
+          <th style="width: 25%;">Best For</th>
+          <th style="width: 35%;">Key Inclusions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Essential</strong></td>
+          <td>NT$30,000</td>
+          <td>Independent seniors</td>
+          <td>4 visits/month, bi-weekly updates, Family Hub access, monthly Hearth Report.</td>
+        </tr>
+        <tr>
+          <td><strong>Signature</strong> (Core)</td>
+          <td>NT$55,000</td>
+          <td>Most families</td>
+          <td>Weekly visits, medical accompaniment, admin coordination, scam co-learning, weekly UX Family Reports.</td>
+        </tr>
+        <tr>
+          <td><strong>Legacy</strong></td>
+          <td>NT$100,000+</td>
+          <td>Highest need</td>
+          <td>Daily presence, 24/7 liaison, family governance, legacy archiving, priority response.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 6. Digital Safety -->
+    <h2>Digital Safety: Co-Learning Model (Ethical Core)</h2>
+    <p>
+      We have rejected intrusive monitoring models. Instead, we practice <strong>Digital Literacy & Scam Defense Co-Learning</strong>:
+    </p>
+    <ul>
+      <li>We work <strong>with</strong> the senior (not on them).</li>
+      <li>Joint configuration of tools (e.g. Whoscall, large contrast keypads).</li>
+      <li>Review of suspicious messages together.</li>
+      <li>Role-playing exercises to build confidence.</li>
+      <li>The senior remains in control and feels respected.</li>
+    </ul>
+    <p>
+      Progress is documented positively in the UX Family Reports (e.g., *“Mrs. Lin independently identified and declined a suspicious message this month”*). This approach is ethically sound, legally safer, and actually deepens trust.
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 7. Brand Identity -->
+    <h2>Brand Identity & Creative Territory</h2>
+    <p>
+      <strong>Name:</strong> Hearthlily — 晴萱  
+      <strong>Positioning:</strong> Private Family Office for Aging  
+      <strong>Core Metaphor:</strong> *“Disperse the clouds so the flower can bloom.”* (Disperser les nuages pour que la fleur s'épanouisse.)
+    </p>
+    
+    <h3>Visual System (designed by Félicia)</h3>
+    <ul>
+      <li><strong>Hero element:</strong> Elegant, minimalist line illustration of the Daylily (萱草).</li>
+      <li><strong>Color palette:</strong> Warm daylily orange, soft cream, deep teal, clean white.</li>
+      <li><strong>In reports:</strong> The flower is the constant brand signature. A simple “Weather of Serenity” system (sun / partial cloud / overcast) gives an instant emotional overview of the month.</li>
+    </ul>
+
+    <!-- 8. Operations & Risk Management -->
+    <h2>Operations & Risk Management</h2>
+    <ul>
+      <li><strong>Transport:</strong> Only premium taxis or chauffeured vehicles (never scooters). Billed as pass-through.</li>
+      <li><strong>Cash & Credentials:</strong> Strict zero-handling policy. No access to banking pin codes or credit cards.</li>
+      <li><strong>Insurance:</strong> Professional liability + accident coverage (minimum NT$5–10M limits).</li>
+      <li><strong>Founder Protection:</strong> All processes documented in the <strong>Hearthlily Operating Manual</strong> (SOPs, tone of voice, escalation matrices) — ready for future team members.</li>
+    </ul>
+
+    <!-- 9. Distribution & Go-to-Market -->
+    <h2>Distribution & Go-to-Market</h2>
+    <p>We prioritize warm, high-trust channels rather than cold digital acquisitions:</p>
+    <ul>
+      <li><strong>Tier 1 (Priority):</strong> Luxury residential towers in Da’an & Xinyi (amenity pitch).</li>
+      <li><strong>Tier 2:</strong> Estate lawyers & family offices (inheritance, power of attorney, succession planning).</li>
+      <li><strong>Tier 3:</strong> Boutique clinics and private wealth advisory teams (Taishin, Fubon, E.Sun).</li>
+    </ul>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 10. Financial Model -->
+    <h2>Financial Model (Three Scenarios)</h2>
+    <p>
+      Target in Year 1: **6–8 families** (founder-led solo operator).
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">Scenario</th>
+          <th style="width: 30%;">Families</th>
+          <th style="width: 25%;">Monthly Gross</th>
+          <th style="width: 20%;">Monthly Net (est.)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Conservative</strong></td>
+          <td>4 (2 Essential + 2 Signature)</td>
+          <td>~NT$170,000</td>
+          <td>~NT$120,000</td>
+        </tr>
+        <tr>
+          <td><strong>Expected</strong></td>
+          <td>6 (3 Essential + 2 Signature + 1 Legacy)</td>
+          <td>~NT$330,000</td>
+          <td>~NT$250,000</td>
+        </tr>
+        <tr>
+          <td><strong>Optimistic</strong></td>
+          <td>8 (4 Essential + 3 Signature + 1 Legacy)</td>
+          <td>~NT$480,000</td>
+          <td>~NT$360,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 11. 90-Day Launch Roadmap -->
+    <h2>90-Day Launch Roadmap (Founder-Led)</h2>
+    <div class="steps-container">
+      <div class="step-item">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h4>Days 1–30: Foundations</h4>
+          <p>Register LLC. Complete Care Attendant certification. Build brand identity, activate the Family Hub portal template, and secure the NT$5-10M liability insurance. Draft contracts and Operating Manual v1.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h4>Days 31–60: First Clients</h4>
+          <p>Launch organic content regarding family peace of mind and digital safety. Secure the first 3 members. Deliver first UX Family Reports on the portal and run a small private seminar.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h4>Days 61–90: Systematization</h4>
+          <p>Stabilize operations and reporting rhythm. Complete first legacy project. Finalize the Operating Manual SOPs. Review pricing and prepare Year 2 hiring plan based on real pilot data.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Long-Term Vision -->
+    <h2>Long-Term Vision (Year 2–5)</h2>
+    <p>
+      <strong>Year 1:</strong> Founder-led, 6–8 elite families, prove the model and refine the method.  
+      <strong>Year 2:</strong> Hire and train 2–3 certified companions. Launch the **Hearthlily Method™** (training + certification system).  
+      <strong>Year 3+:</strong> Light technology platform. License the Family Hub and reporting system to selected high-quality partners and premium senior residences while maintaining the ultra-premium core service.
+    </p>
+
+  </div>
+
+</body>
+</html>
