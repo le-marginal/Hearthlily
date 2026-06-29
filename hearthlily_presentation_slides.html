@@ -74,7 +74,7 @@
       visibility: hidden;
       transform: translateX(50px);
       transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.5s;
-      padding: 60px 80px;
+      padding: 50px 70px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -92,22 +92,22 @@
 
     /* Slide Header */
     .slide-header {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     
     .slide-tag {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 600;
       color: var(--accent-color);
       text-transform: uppercase;
       letter-spacing: 2px;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
       display: block;
     }
 
     .slide-title {
       font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
+      font-size: 2.1rem;
       color: var(--primary-color);
       font-weight: 700;
       display: inline-block;
@@ -127,7 +127,7 @@
 
     /* Slide Content Styles */
     .slide-content {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--light-text);
       flex: 1;
       display: flex;
@@ -153,7 +153,7 @@
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 8px;
-      padding: 24px;
+      padding: 20px;
       box-shadow: var(--shadow);
       display: flex;
       flex-direction: column;
@@ -162,49 +162,49 @@
 
     .info-card h4 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       color: var(--primary-color);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .info-card p {
-      font-size: 0.95rem;
-      line-height: 1.5;
+      font-size: 0.9rem;
+      line-height: 1.45;
     }
 
     /* Highlight badge */
     .highlight-badge {
       background: var(--primary-light);
       border-left: 4px solid var(--primary-color);
-      padding: 15px 20px;
+      padding: 12px 18px;
       border-radius: 0 6px 6px 0;
-      margin: 15px 0;
+      margin: 12px 0;
     }
 
     .highlight-badge p {
       margin: 0;
       font-style: italic;
       color: var(--primary-color);
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
 
     .price-badge {
       font-family: 'Outfit', sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--accent-color);
       background: #FDF9EA;
-      padding: 2px 8px;
+      padding: 2px 6px;
       border-radius: 4px;
       border: 1px solid rgba(212, 175, 55, 0.2);
     }
 
     /* Navigation Controls */
     .presentation-controls {
-      height: 60px;
+      height: 55px;
       border-top: 1px solid var(--border-color);
       padding: 0 40px;
       display: flex;
@@ -219,7 +219,7 @@
       border: none;
       color: var(--primary-color);
       font-family: 'Outfit', sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -245,8 +245,8 @@
     }
 
     .indicator-dot {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
       background: #D5DDD8;
       cursor: pointer;
@@ -283,30 +283,30 @@
 
     .title-slide h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
+      font-size: 3.2rem;
       color: var(--primary-color);
       margin-bottom: 5px;
     }
 
     .title-slide h2 {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       color: var(--accent-color);
       text-transform: uppercase;
       letter-spacing: 4px;
       font-weight: 600;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     .title-meta {
       display: flex;
       gap: 40px;
-      margin-top: 40px;
+      margin-top: 35px;
       border-top: 1px solid var(--border-color);
-      padding-top: 25px;
+      padding-top: 20px;
     }
 
     .title-meta-item {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: var(--light-text);
       text-align: left;
     }
@@ -314,30 +314,30 @@
     .title-meta-item strong {
       color: var(--text-color);
       display: block;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       margin-bottom: 3px;
     }
 
     /* Keyboard tips */
     .keyboard-tip {
       position: absolute;
-      bottom: 75px;
-      font-size: 0.8rem;
+      bottom: 70px;
+      font-size: 0.75rem;
       color: #909894;
       background: rgba(0,0,0,0.03);
-      padding: 4px 10px;
+      padding: 4px 8px;
       border-radius: 4px;
       border: 1px solid var(--border-color);
     }
 
     ul {
       margin-left: 20px;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     li {
-      margin-bottom: 6px;
-      font-size: 1rem;
+      margin-bottom: 5px;
+      font-size: 0.95rem;
     }
     
     li::marker {
@@ -358,13 +358,13 @@
     <!-- Slides Wrapper -->
     <div class="slides-wrapper">
       
-      <!-- Slide 1: Title -->
+      <!-- Slide 1: Cover -->
       <div class="slide title-slide active" data-index="0">
         <span class="slide-tag">Business Proposal Presentation</span>
         <h1>Hearthlily — 晴萱</h1>
         <h2>Private Family Office for Aging</h2>
         <p style="max-width: 600px; font-style: italic; font-size: 1.1rem;">
-          An ultra-premium, design-led, tech-enabled private family office for Taipei's elite elders, delivering absolute peace of mind and visual connection to global families.
+          When you can't be there, we can. Care, dignity, and peace of mind for the people who raised you.
         </p>
         
         <div class="title-meta">
@@ -385,204 +385,291 @@
         <div class="keyboard-tip">💡 Tip: Use Left / Right arrow keys or Spacebar to navigate.</div>
       </div>
 
-      <!-- Slide 2: The Opportunity -->
+      <!-- Slide 2: The Insight -->
       <div class="slide" data-index="1">
         <div class="slide-header">
-          <span class="slide-tag">The Market Opportunity</span>
-          <h2 class="slide-title">Taipei's Super-Aged Reality</h2>
+          <span class="slide-tag">Slide 1 · The Insight</span>
+          <h2 class="slide-title">The Core Family Problem</h2>
         </div>
         <div class="slide-content">
           <div class="grid-2">
             <div>
-              <p><strong>A Rapidly Aging Demographic:</strong></p>
+              <p><strong>A Care vs. Connection Problem:</strong></p>
               <ul>
-                <li>Taiwan is one of Asia's fastest-aging societies.</li>
-                <li><strong>Taipei City has the highest concentration in the country: 24.18% of residents are 65+</strong>.</li>
-                <li>Geographical separation: children in US/Europe carry constant guilt and anxiety.</li>
+                <li>Aging in Asia’s wealthiest families is no longer just a physical care issue. It is a **trust, visibility, and emotional connection** challenge.</li>
+                <li>Adult children working globally carry constant low-grade anxiety. They do not want raw utility care; they need an elegant local representative on the ground.</li>
               </ul>
             </div>
             <div>
-              <p><strong>The Gap in Public Care:</strong></p>
+              <p><strong>The Current Market Gap:</strong></p>
               <ul>
-                <li>Strictly means-tested and target-focused on severe disability.</li>
-                <li>Active, independent "young-old" seniors do not qualify.</li>
-                <li>Vulnerability to digital fraud (LINE/banking scams) is rising fast.</li>
+                <li><strong>Extreme A (Low-end):</strong> Domestic helpers good at basic chores but poor at judgment, safety mapping, and design-led updates.</li>
+                <li><strong>Extreme B (Clinical):</strong> High-dependency medical sits focused on end-of-life pathology.</li>
               </ul>
               <div class="highlight-badge" style="margin-top: 15px;">
-                <p>We occupy the premium middle ground, offering lifestyle care instead of medical sitting.</p>
+                <p>We target the high-end gap: Dignity, Intelligence, and Discretion.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 3: Félicia's Moat -->
+      <!-- Slide 3: The Solution -->
       <div class="slide" data-index="2">
         <div class="slide-header">
-          <span class="slide-tag">The Moat</span>
-          <h2 class="slide-title">Félicia's Core Advantages</h2>
+          <span class="slide-tag">Slide 2 · The Solution</span>
+          <h2 class="slide-title">Private Family Office for Aging</h2>
         </div>
         <div class="slide-content">
+          <p style="margin-bottom: 20px;">We act as the family’s trusted local representative — combining premium curation, digital safety, and beautiful updates into one unified service.</p>
           <div class="grid-3">
             <div class="info-card">
-              <h4>1. Native Trust</h4>
-              <p>Being a Taiwanese citizen with local cultural and linguistic fluency clears the single largest obstacle in senior services: trust and family connection.</p>
+              <h4>1. Human Presence</h4>
+              <p>Dignified companionship, boutique excursions, cultural scheduling, and physical escorting across Taipei.</p>
             </div>
             <div class="info-card">
-              <h4>2. Hearth Score™ Dashboard</h4>
-              <p>Applying your UI/UX background to create a structured digital report dashboard (timeline updates, photos, medical logs, safety metrics) instead of messy LINE chats.</p>
+              <h4>2. Device Safety</h4>
+              <p>Ethical digital safety co-learning, UI simplification, cloud archives, and direct anti-scam defense checks.</p>
             </div>
             <div class="info-card">
-              <h4>3. Digital Legacy & UI</h4>
-              <p>A rare, high-ticket service line to organize family digital archives, cloud backups, and optimize tablet/mobile UI to prevent deceptive scam inputs.</p>
+              <h4>3. Family Visibility</h4>
+              <p>Direct reports shared with children globally via the interactive **Hearthlily Family Hub** secure portal.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 4: Service Portfolio -->
+      <!-- Slide 4: Why Now -->
       <div class="slide" data-index="3">
         <div class="slide-header">
-          <span class="slide-tag">Core Services</span>
-          <h2 class="slide-title">Three Tailored Service Lines</h2>
+          <span class="slide-tag">Slide 3 · Why Now</span>
+          <h2 class="slide-title">Demographic Catalyst</h2>
         </div>
         <div class="slide-content">
-          <div class="grid-3">
-            <div class="info-card" style="border: 2px solid var(--accent-color);">
-              <h4>Family Assessment <span class="price-badge">NT$30,000</span></h4>
-              <p>A mandatory 30-day setup phase including a full device safety audit, wellness profiling, baseline Hearth Score, and portal activation.</p>
+          <div class="grid-2">
+            <div>
+              <p><strong>Taipei's Super-Aged Reality:</strong></p>
+              <ul>
+                <li>Taiwan is super-aged. **Taipei City has the highest concentration of 65+ residents (24.18%)**.</li>
+                <li>Shrinking family structures: many elders have only one child, often residing overseas (US, EU, Singapore).</li>
+              </ul>
             </div>
-            <div class="info-card" style="border: 2px solid #E74C3C;">
-              <h4>Emergency Package <span class="price-badge">NT$50,000</span></h4>
-              <p>A comprehensive crisis readiness package: medical file digitizing, emergency contact trees, hospital choices, and rapid action protocols.</p>
-            </div>
-            <div class="info-card">
-              <h4>Digital Legacy <span class="price-badge">NT$15k-35k</span></h4>
-              <p>Decluttering digital lives, backing up family media, and configuring tablets/phones for legible, senior-friendly use and scam protection.</p>
+            <div>
+              <p><strong>Vulnerability & Asset Protection:</strong></p>
+              <ul>
+                <li>Seniors are primary targets for online phishing, LINE impersonations, and financial scams.</li>
+                <li>Affluent families have substantial capital but limited time to manage routine security.</li>
+              </ul>
+              <div class="highlight-badge" style="margin-top: 15px;">
+                <p>Those with the means to pay are precisely those feeling the pain most acutely.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 5: Subscription Retainers -->
+      <!-- Slide 5: The Founder -->
       <div class="slide" data-index="4">
         <div class="slide-header">
-          <span class="slide-tag">Business Model</span>
-          <h2 class="slide-title">Private Membership Tiers</h2>
+          <span class="slide-tag">Slide 4 · The Founder</span>
+          <h2 class="slide-title">Félicia — Creative Lead</h2>
         </div>
         <div class="slide-content">
-          <div class="grid-3">
+          <div class="grid-2">
+            <div>
+              <p><strong>A Systems & Design Thinker:</strong></p>
+              <ul>
+                <li>Taiwanese designer with deep expertise in graphic design, logo design, and UI/UX research.</li>
+                <li>Observation: traditional care agencies fail to translate the nuanced reality of aging into something reassuring.</li>
+              </ul>
+            </div>
             <div class="info-card">
-              <h4>Essential Membership <span class="price-badge">NT$30,000 / mo</span></h4>
-              <ul style="margin: 5px 0 0 10px; font-size: 0.8rem;">
-                <li>4 curated visits per month</li>
-                <li>Bi-weekly update calls</li>
-                <li>Full Family Hub timeline access</li>
-                <li>Monthly Hearth Report</li>
+              <h4>Visible Curation Moat</h4>
+              <p>Félicia’s graphic and UX background allows Hearthlily to transform daily support into structured, beautiful reports and family alignment rituals. She is the trusted face of the brand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Brand Identity -->
+      <div class="slide" data-index="5">
+        <div class="slide-header">
+          <span class="slide-tag">Slide 5 · Brand System</span>
+          <h2 class="slide-title">Branding & Metaphor</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div>
+              <p><strong>The Metaphor:</strong></p>
+              <div class="highlight-badge">
+                <p>“Disperse the clouds so the flower can bloom.”</p>
+              </div>
+              <p style="margin-top: 10px;">The Daylily (萱草) is the traditional Chinese symbol of motherly love and stress relief. Our brand represents warmth, serenity, and refined cultural connection.</p>
+            </div>
+            <div class="info-card">
+              <h4>Visual Assets</h4>
+              <ul>
+                <li>Minimalist Daylily line-art logo</li>
+                <li>Palette: Daylily Orange, Silk Cream, Sage Teal, Absolute Charcoal</li>
+                <li>"Weather of Serenity" (sun/clouds) reporting indicator</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7: The Offer -->
+      <div class="slide" data-index="6">
+        <div class="slide-header">
+          <span class="slide-tag">Slide 6 · The Offer</span>
+          <h2 class="slide-title">Setup & Monthly Tiers</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div class="info-card" style="border: 2px solid var(--accent-color);">
+              <h4>Setup Packages (One-off)</h4>
+              <ul>
+                <li><strong>Assessment (NT$30,000):</strong> Device audit, wellness baseline, Family Hub setup.</li>
+                <li><strong>Emergency Plan (NT$50,000):</strong> Crisis trees, digitized medical files, legal authorizations.</li>
               </ul>
             </div>
             <div class="info-card" style="border: 2px solid var(--primary-color);">
-              <h4>Signature Membership <span class="price-badge">NT$55,000 / mo</span></h4>
-              <ul style="margin: 5px 0 0 10px; font-size: 0.8rem;">
-                <li>Weekly curated active visits</li>
-                <li>Full doctor accompaniment & summaries</li>
-                <li><strong>Weekly UX Family Reports</strong> & digital safety sweeps</li>
-                <li>Priority emergency booking</li>
-              </ul>
-            </div>
-            <div class="info-card">
-              <h4>Legacy Membership <span class="price-badge">NT$100,000+ / mo</span></h4>
-              <ul style="margin: 5px 0 0 10px; font-size: 0.8rem;">
-                <li>Daily presence/companion excursions</li>
-                <li>Family governance & succession facilitation</li>
-                <li>Complete digital legacy preservation</li>
-                <li>24/7 dedicated curator liaison</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 6: Operational Safety -->
-      <div class="slide" data-index="5">
-        <div class="slide-header">
-          <span class="slide-tag">Risk Mitigation</span>
-          <h2 class="slide-title">Safety, Transport & Trust Rules</h2>
-        </div>
-        <div class="slide-content">
-          <div class="grid-2">
-            <div>
-              <p><strong>Premium Transit Policy:</strong></p>
+              <h4>Monthly Memberships</h4>
               <ul>
-                <li><strong>Seniors are never transported on scooters.</strong></li>
-                <li>All transit during client hours uses taxis or chauffeured premium vehicles, billed directly to the client as a pass-through cost.</li>
-                <li>Félicia's scooter is strictly for solo admin errands.</li>
-              </ul>
-            </div>
-            <div>
-              <p><strong>Onboarding & Finance Safeguards:</strong></p>
-              <ul>
-                <li><strong>Zero Cash Handling:</strong> Staff never touch cash/passwords. All payments run via digital billing.</li>
-                <li><strong>Digital Safety Co-Learning:</strong> Joint device audits and Whoscall config (no paternalistic tracking).</li>
+                <li><strong>Essential (NT$30,000/mo):</strong> 4 visits, monthly reports, portal access.</li>
+                <li><strong>Signature (NT$55,000/mo):</strong> Weekly visits, medical chaperone, weekly reports.</li>
+                <li><strong>Legacy (NT$100,000+/mo):</strong> Daily presence, legacy work, 24/7 liaison.</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 7: Financial Model -->
-      <div class="slide" data-index="6">
-        <div class="slide-header">
-          <span class="slide-tag">Financial Outlook</span>
-          <h2 class="slide-title">Solo Unit Economics (Expected)</h2>
-        </div>
-        <div class="slide-content">
-          <div class="grid-2">
-            <div>
-              <p><strong>Year 1 Target Capacity:</strong> 6 active families (3 Essential + 2 Signature + 1 Legacy) to protect quality.</p>
-              <ul style="font-size: 0.95rem;">
-                <li>Retainers (3 Essential + 2 Signature + 1 Legacy): <strong>NT$300,000/mo</strong></li>
-                <li>Setup fees & Emergency Packages (avg): <strong>NT$30,000/mo</strong></li>
-                <li>Extra Curation Hours: <strong>NT$10,000/mo</strong></li>
-                <li><strong>Expected Monthly Gross Revenue: NT$340,000/mo</strong></li>
-              </ul>
-            </div>
-            <div class="info-card">
-              <p><strong>Monthly Cash Summary:</strong></p>
-              <ul style="font-size: 0.9rem; margin-top: 5px;">
-                <li>Gross Revenue: NT$340,000</li>
-                <li>OPEX (Accountant, software, opex, marketing): -NT$25,000</li>
-                <li>Income Tax Provision: -NT$45,000</li>
-                <li><strong>Net Profit (Solo): ~NT$270,000 / mo (€8,000)</strong></li>
-              </ul>
-              <p style="font-size: 0.8rem; font-style: italic; margin-top: 10px; color: var(--primary-color);">*Excellent profit margins for a solo operator.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 8: The Roadmap -->
+      <!-- Slide 8: Curation & Hearth Score -->
       <div class="slide" data-index="7">
         <div class="slide-header">
-          <span class="slide-tag">Execution Plan</span>
-          <h2 class="slide-title">90-Day Launch & Scaling</h2>
+          <span class="slide-tag">Slide 7 · Curation Process</span>
+          <h2 class="slide-title">Hearth Score™ & Value Loop</h2>
         </div>
         <div class="slide-content">
           <div class="grid-2">
             <div>
-              <p><strong>90-Day Launch Plan:</strong></p>
-              <ol style="margin-left: 20px; font-size: 0.95rem;">
-                <li><strong>Days 1–30:</strong> Setup LLC, liability insurance, care-attendant course, legal contracts, and Family Hub portal template.</li>
-                <li><strong>Days 31–60:</strong> Pitch luxury residential managers and private bank advisory heads. Land first 3 members.</li>
-                <li><strong>Days 61–90:</strong> Convert one-offs to Gold retainers. Deliver reports on the portal. Write SOP playbook.</li>
-              </ol>
-            </div>
-            <div>
-              <p><strong>Year 2+ Scaling:</strong></p>
+              <p><strong>The Hearth Score™ Index:</strong></p>
+              <p>Every curated companion visit generates structured feedback across 4 core dimensions on the Family Hub portal:</p>
               <ul>
-                <li><strong>Network Model:</strong> Hire and train certified companion curators paid NT$700–800/h.</li>
-                <li><strong>Hearthlily Certified Companion™ (Y3):</strong> Shift to a licensing/franchise model, scaling globally.</li>
+                <li><strong>Physical Safety:</strong> Home safety, mobility, hazards.</li>
+                <li><strong>Vitality:</strong> Cognition, sleep, nutrition, mood.</li>
+                <li><strong>Connection:</strong> Excursions, family calls, social.</li>
+                <li><strong>Digital Security:</strong> Scam defense, accounts.</li>
               </ul>
+            </div>
+            <div class="info-card">
+              <h4>Structured Insight</h4>
+              <p>Turns qualitative observations into clear, metrics-driven data, giving overseas children immediate clarity on how their parents are doing without looking clinical.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 9: Go-to-Market -->
+      <div class="slide" data-index="8">
+        <div class="slide-header">
+          <span class="slide-tag">Slide 8 · Acquisition</span>
+          <h2 class="slide-title">High-Trust B2B Channels</h2>
+        </div>
+        <div class="slide-content">
+          <p style="margin-bottom: 20px;">Instead of slow medical networks, we target gatekeepers of Taipei's elite wealth:</p>
+          <div class="grid-3">
+            <div class="info-card">
+              <h4>1. Luxury Towers</h4>
+              <p>Partnering with premium property developers in Da'an/Xinyi as a resident VIP amenity.</p>
+            </div>
+            <div class="info-card">
+              <h4>2. Succession Lawyers</h4>
+              <p>Partnering with estate planners, inheritance lawyers, and family offices.</p>
+            </div>
+            <div class="info-card">
+              <h4>3. Wealth Advisors</h4>
+              <p>Partnering with private banking teams (Taishin, Fubon, E.Sun) & boutique medical clinics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 10: Financial Model -->
+      <div class="slide" data-index="9">
+        <div class="slide-header">
+          <span class="slide-tag">Slide 9 · Financials</span>
+          <h2 class="slide-title">Three Financial Scenarios (Y1)</h2>
+        </div>
+        <div class="slide-content">
+          <p style="margin-bottom: 20px;">Assumes a disciplined solo-operator model capped at 6-8 active families in Year 1 to protect quality.</p>
+          <div class="grid-3">
+            <div class="info-card">
+              <h4>Conservative</h4>
+              <p>4 families</p>
+              <h3 style="color: var(--accent-color); margin: 10px 0;">NT$170k / mo</h3>
+              <p>Net: ~NT$120k / mo</p>
+            </div>
+            <div class="info-card" style="border: 2px solid var(--primary-color);">
+              <h4>Expected (Core)</h4>
+              <p>6 families</p>
+              <h3 style="color: var(--primary-color); margin: 10px 0;">NT$330k / mo</h3>
+              <p>Net: ~NT$250k / mo</p>
+            </div>
+            <div class="info-card">
+              <h4>Optimistic</h4>
+              <p>8 families</p>
+              <h3 style="color: var(--accent-color); margin: 10px 0;">NT$480k / mo</h3>
+              <p>Net: ~NT$360k / mo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 11: The Advantage -->
+      <div class="slide" data-index="10">
+        <div class="slide-header">
+          <span class="slide-tag">Slide 10 · Strategic Moat</span>
+          <h2 class="slide-title">Hearthlily's Triple Moat</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-3">
+            <div class="info-card">
+              <h4>1. Human Trust</h4>
+              <p>Deep, long-term relationships built on absolute respect, local cultural integration, and consistency.</p>
+            </div>
+            <div class="info-card">
+              <h4>2. Design Intelligence</h4>
+              <p>Beautiful, useful, emotionally resonant family reporting, client styling, and curated outings.</p>
+            </div>
+            <div class="info-card">
+              <h4>3. Systems Thinking</h4>
+              <p>Rigorous processes, secure documentation, and scalability from Day 1 (no founder bottleneck).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 12: Roadmap & Ask -->
+      <div class="slide" data-index="11">
+        <div class="slide-header">
+          <span class="slide-tag">Slide 11 & 12 · Roadmap</span>
+          <h2 class="slide-title">Future Growth & Partnership</h2>
+        </div>
+        <div class="slide-content">
+          <div class="grid-2">
+            <div>
+              <p><strong>Scaling Timeline:</strong></p>
+              <ul>
+                <li><strong>Year 1:</strong> Solo model. 6–8 families. Establish standard operating procedures (SOPs).</li>
+                <li><strong>Year 2:</strong> Hire certified companion curators. Launch the **Hearthlily Method™**.</li>
+                <li><strong>Year 3+:</strong> License Family Hub software to premium retirement operators.</li>
+              </ul>
+            </div>
+            <div class="info-card" style="border: 2px solid var(--accent-color);">
+              <h4>The Ask</h4>
+              <p>We are seeking strategic partners (luxury real estate, private banks, boutique clinics) to join us in building the future of dignified aging in Taipei.</p>
             </div>
           </div>
         </div>
