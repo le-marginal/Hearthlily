@@ -158,6 +158,25 @@ We prioritize warm, high-trust channels:
 
 ---
 
+## Startup Budget & Initial Investment
+
+Hearthlily is launched with an initial capital ceiling of **€10,000 (approx. NT$340,000)**, fully allocated to cover pre-launch licensing, infrastructure, initial legal protection, and working capital:
+
+| Item | Cost (NT$) | Cost (€ equivalent) | Purpose |
+| :--- | :--- | :--- | :--- |
+| **LLC Registration & Legal Setup** | NT$25,000 | €735 | Company registration, local CPA, business bank account setup |
+| **Professional Training & Certs** | NT$12,000 | €350 | Care Attendant (照顧服務員) certification & Red Cross First Aid courses (Félicia) |
+| **Professional Liability Insurance** | NT$30,000 | €880 | Year 1 premium for NT$5-10M third-party liability & accident cover |
+| **Branding & Graphic Design Assets** | NT$25,000 | €735 | Typographic licenses, high-resolution branding assets & templates (Félicia) |
+| **Portal & Family Hub Tech Setup** | NT$30,000 | €880 | Domain, secure server hosting, database setup, and SMS/LINE API integrations (Morgan) |
+| **Luxury B2B Marketing Materials** | NT$40,000 | €1,180 | Ultra-premium print portfolios, luxury folders, and business cards for family offices |
+| **First 3 Months Software & CRM** | NT$18,000 | €530 | SaaS operations (booking management, secure document vault, Whoscall premium tokens) |
+| **Operational Mobility Asset** | NT$40,000 | €1,180 | Safe, reliable used scooter for Félicia's solo administrative and coordination runs |
+| **Initial Working Capital Reserve** | NT$120,000 | €3,530 | Cash runway buffer for launch expenses, client setup gaps, and early OPEX support |
+| **Total Starting Capital** | **NT$340,000** | **€10,000** | **100% allocation of initial founder funding** |
+
+---
+
 ## Financial Model (Three Scenarios)
 
 **Target in Year 1**: 6–8 families (founder-led)
