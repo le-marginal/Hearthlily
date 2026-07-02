@@ -23,15 +23,15 @@ This repository serves as the shared anchor point for the Hearthlily project, sy
 
 ## 📂 Project Resources
 
-*   📄 **[Business Plan V4 (Final)](Hearthlily_Business_Plan_V4_Final.md)**: Detailing positioning, competitor analysis, services, risk mitigation, and startup budget for launch.
-*   📄 **[Business Plan PDF (Printed)](Hearthlily_Business_Plan_V4_Final.pdf)**: Print-ready A4 PDF copy.
+*   📄 **[Business Plan V5](Hearthlily_Business_Plan_V5.md)**: Detailing positioning, competitor analysis, services, risk mitigation, and startup budget for launch.
+*   📄 **[Business Plan PDF (Printed)](Hearthlily_Business_Plan_V5.pdf)**: Print-ready A4 PDF copy.
 *   📄 **[Investor Presentation Deck](Hearthlily_Investor_Deck.md)**: Pitch slides narrative text.
 *   📄 **[Interactive Presentation Slides](hearthlily_presentation_slides.html)**: 12-slide HTML presentation deck.
 *   📄 **[Logo Design Brief & Concepts](hearthlily_logo_concept_1.png)**: Visual branding guidelines and design brief. See also [logo_design_brief.md](.system_generated/../logo_design_brief.md) (locally generated in workspace).
 
 ---
 
-## 🛠️ Service Offerings (V4 Specs)
+## 🛠️ Service Offerings (V5 Specs)
 
 1.  **Entry Packages (One-time)**
     *   **Private Family Assessment (NT$30,000):** Home visit, family interviews, device/scam audit, baseline Hearth Score, Family Hub activation.
@@ -39,7 +39,7 @@ This repository serves as the shared anchor point for the Hearthlily project, sy
 2.  **Private Monthly Memberships**
     *   **Essential (NT$30,000/mo):** 4 curated visits per month, bi-weekly updates, Family Hub access, monthly Hearth Report.
     *   **Signature (NT$55,000/mo - Core):** Weekly curated active visits, medical accompaniment, admin coordination, scam co-learning, weekly UX Family Reports.
-    *   **Legacy (NT$100,000+/mo):** Daily presence, 24/7 dedicated liaison, family governance, legacy photo archiving, legal/succession coordination.
+    *   **Legacy (NT$180,000/mo):** Daily active presence (max 2h/day), 24/7 messaging window, family succession & legacy archiving.
 
 ---
 

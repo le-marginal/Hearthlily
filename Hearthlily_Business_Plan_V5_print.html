@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hearthlily (晴萱) — Business Plan V5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #FDFBF7;
+      --primary-color: #5F7D6D;
+      --primary-light: #EBF0ED;
+      --accent-color: #D4AF37;
+      --text-color: #2C3531;
+      --light-text: #606864;
+      --border-color: #E2DDD5;
+      --card-bg: #FFFFFF;
+      --shadow: 0 4px 20px rgba(95, 125, 109, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      color: var(--text-color);
+      background-color: #F3F1EC;
+      line-height: 1.6;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page-container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: var(--bg-color);
+      padding: 80px 100px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    @media print {
+      body {
+        background-color: #FFFFFF;
+      }
+      .page-container {
+        margin: 0;
+        padding: 40px 50px;
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+        background: #FFFFFF;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+
+    .print-banner {
+      max-width: 850px;
+      margin: 20px auto 0 auto;
+      background: var(--primary-color);
+      color: #FFFFFF;
+      padding: 15px 20px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .print-banner p {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .print-btn {
+      background: var(--accent-color);
+      color: var(--text-color);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      transition: background 0.2s;
+    }
+    .print-btn:hover {
+      background: #C49F2D;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.15;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 8px;
+      margin: 40px 0 20px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 25px 0 12px 0;
+      color: var(--primary-color);
+    }
+
+    p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      color: var(--light-text);
+      text-align: justify;
+    }
+
+    strong {
+      color: var(--text-color);
+      font-weight: 600;
+    }
+
+    .cover-section {
+      text-align: center;
+      padding: 100px 0 80px 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 40px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 50px;
+      padding: 25px;
+      background: var(--primary-light);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .meta-grid-item {
+      font-size: 0.95rem;
+      color: var(--primary-color);
+    }
+    .meta-grid-item strong {
+      color: var(--primary-color);
+    }
+
+    .highlight-box {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary-color);
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-style: italic;
+      color: var(--primary-color);
+      font-size: 1.1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin: 25px 0;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    ul, ol {
+      margin: 15px 0 25px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--light-text);
+      font-size: 1.05rem;
+    }
+
+    li::marker {
+      color: var(--accent-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background-color: var(--primary-color);
+      color: #FFFFFF;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    tr {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    tr:nth-child(even) {
+      background-color: #FAF9F6;
+    }
+
+    tr:last-child {
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    .steps-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 20px;
+    }
+
+    .step-number {
+      background: var(--primary-color);
+      color: #FFFFFF;
+      font-weight: 700;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+
+    .step-content h4 {
+      font-size: 1.1rem;
+      color: var(--text-color);
+      margin-bottom: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Print Helper Banner -->
+  <div class="print-banner no-print">
+    <p>💡 <strong>Astuce :</strong> Appuyez sur <strong>Ctrl + P</strong> (ou Cmd + P) et choisissez <strong>"Enregistrer au format PDF"</strong> pour générer le document.</p>
+    <button class="print-btn" onclick="window.print()">Imprimer Plan V5</button>
+  </div>
+
+  <div class="page-container">
+    
+    <!-- Page de garde -->
+    <div class="cover-section">
+      <h1>Hearthlily — 晴萱</h1>
+      <div class="subtitle" style="margin-top: 15px;">Private Family Office for Aging</div>
+      <div style="font-size: 1.25rem; font-style: italic; color: var(--light-text); max-width: 550px; margin: 30px auto 0 auto; line-height: 1.5;">
+        « When you can't be there, we can. »<br>
+        Sérénité, dignité et connexion visuelle pour les aînés et leur famille.
+      </div>
+      
+      <div class="meta-grid">
+        <div class="meta-grid-item">👤 <strong>Fondatrice & Directrice Créative :</strong> Félicia</div>
+        <div class="meta-grid-item">📍 <strong>Localisation :</strong> Taipei, Taiwan</div>
+        <div class="meta-grid-item">📈 <strong>Version :</strong> V5 — Plan stratégique et opérationnel consolidé</div>
+        <div class="meta-grid-item">📅 <strong>Date :</strong> Juillet 2026</div>
+      </div>
+      
+      <p style="font-size: 0.85rem; margin-top: 30px; font-style: italic;">
+        Note : le nom « Hearthlily » est un nom de travail en cours de validation (voir Annexe C — Naming).
+      </p>
+    </div>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- Résumé exécutif -->
+    <h2>Résumé exécutif</h2>
+    <p>
+      Hearthlily est un service ultra-premium de type <strong>Private Family Office for Aging</strong>, basé à Taipei et piloté par sa fondatrice. Nous ne vendons pas des heures de garde ni de l'aide domestique : nous vendons la tranquillité d'esprit absolue, la dignité et la connexion visuelle aux familles aisées — en particulier celles dont les enfants adultes vivent à l'étranger.
+    </p>
+    
+    <h3>Quatre Piliers Stratégiques</h3>
+    <ol>
+      <li><strong>La rareté comme feature :</strong> Capacité strictement plafonnée à 6 familles en année 1, dont 1 seule famille Legacy, avec liste d'attente assumée.</li>
+      <li><strong>L'éthique comme différenciateur :</strong> Co-apprentissage anti-arnaque (sans surveillance intrusive) et Charte du Senior formalisant le consentement éclairé.</li>
+      <li><strong>Le design comme système :</strong> Reporting industrialisé, esthétiquement impeccable par construction, produit en moins de 45 minutes par rapport hebdomadaire.</li>
+      <li><strong>La preuve avant la promesse :</strong> Programme pilote des "Familles Fondatrices" pour les 90 premiers jours, transformant le démarrage à froid en privilège limité.</li>
+    </ol>
+
+    <div class="highlight-box">
+      <p><strong>Mission :</strong> Préserver l'indépendance, la dignité et la connexion intergénérationnelle pendant le vieillissement — par la confiance humaine, des systèmes intelligents et une communication magnifique.</p>
+    </div>
+
+    <!-- 1. Le problème -->
+    <h2>1. Le problème</h2>
+    <p>
+      Taïwan est l'une des sociétés qui vieillit le plus vite d'Asie, et Taipei concentre l'une des plus fortes proportions de résidents âgés de 65 ans et plus. Plusieurs tendances structurelles créent un vide douloureux pour les familles aisées :
+    </p>
+    <ul>
+      <li><strong>Rétrécissement du soutien familial :</strong> Beaucoup de parents n'ont qu'un seul enfant, souvent éloigné.</li>
+      <li><strong>Séparation géographique :</strong> Les enfants adultes vivant à l'étranger (USA, Europe, Singapour, Japon) vivent avec une culpabilité et une anxiété constantes.</li>
+      <li><strong>Vulnérabilité numérique :</strong> Les seniors sont ciblés par des arnaques de plus en plus sophistiquées (LINE, usurpations d'identité, fraudes bancaires).</li>
+      <li><strong>Isolement émotionnel :</strong> La solitude accélère le déclin cognitif et physique.</li>
+      <li><strong>Asymétrie d'information :</strong> Les familles découvrent les problèmes de sécurité ou de santé trop tard, faute de visibilité fiable.</li>
+    </ul>
+    <p>
+      <strong>Le gap de marché :</strong> Il n'existe aucun service premium combinant intelligence émotionnelle, qualité de design et rigueur opérationnelle, entre l'aide de base et le family office complet.
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 2. Notre solution -->
+    <h2>2. Notre solution : les cinq piliers</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">Pilier</th>
+          <th style="width: 45%;">Ce que nous délivrons</th>
+          <th style="width: 30%;">Résultat pour la famille</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sécurité physique</strong></td>
+          <td>Détection des dangers domestiques, prévention des chutes, soutien à la mobilité.</td>
+          <td>Risque de crise réduit.</td>
+        </tr>
+        <tr>
+          <td><strong>Vitality</strong></td>
+          <td>Suivi de l'énergie, de l'appétit, de la cognition et des routines.</td>
+          <td>Détection précoce du déclin.</td>
+        </tr>
+        <tr>
+          <td><strong>Connexion</strong></td>
+          <td>Compagnie, sorties, stimulation sociale, appels familiaux facilités.</td>
+          <td>Isolement réduit.</td>
+        </tr>
+        <tr>
+          <td><strong>Sécurité numérique</strong></td>
+          <td>Co-apprentissage anti-arnaque, simplification des appareils, hygiène des mots de passe.</td>
+          <td>Protection sans infantilisation.</td>
+        </tr>
+        <tr>
+          <td><strong>Clarté & Visibilité</strong></td>
+          <td>Reporting structuré et élégant + Family Hub sécurisé.</td>
+          <td>Tranquillité d'esprit et visibilité.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 3. L'éthique au cœur du modèle -->
+    <h2>3. L'éthique au cœur du modèle</h2>
+    
+    <h3>3.1 Co-apprentissage numérique</h3>
+    <p>
+      Nous rejetons les modèles de surveillance intrusive. Nous pratiquons le co-apprentissage en littératie numérique et défense anti-arnaque : nous travaillons <strong>avec</strong> le senior, jamais <strong>sur</strong> lui. Configuration conjointe des outils (Whoscall, contraste), revue commune des messages suspects et exercices de mise en situation. Le senior reste maître de ses outils et se sent respecté.
+    </p>
+    
+    <h3>3.2 La Charte du Senior</h3>
+    <p>
+      Le payeur est l'enfant, mais le sujet des données est le parent. Les informations transmises (appétit, cognition, routines) sont des données personnelles sensibles au sens de la loi taïwanaise (<strong>個人資料保護法</strong>). La Charte du Senior formalise le périmètre consenti des rapports, protège le jardin privé du parent, et accorde au senior un droit de veto permanent sur ce qui est publié sur le Family Hub.
+    </p>
+    
+    <h3>3.3 Règle d'interprétation "Weather of Serenity"</h3>
+    <p>
+      Le système météo donne un aperçu émotionnel instantané du mois. <strong>Règle absolue :</strong> aucun état dégradé (ex: couvert) n'est jamais transmis seul. Tout signal d'alerte arrive obligatoirement accompagné de trois éléments : l'interprétation, l'action immédiate déjà engagée par Hearthlily, et la recommandation concrète pour la famille.
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 4. Modèle de capacité -->
+    <h2>4. Modèle de capacité</h2>
+    
+    <h3>4.1 Table de charge horaire par tier (par mois)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Visites & présence</th>
+          <th>Trajets</th>
+          <th>Reporting & Hub</th>
+          <th>Coordination & admin</th>
+          <th>Total / mois</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Essential</strong></td>
+          <td>8 h (4 visites)</td>
+          <td>4 h</td>
+          <td>1,5 h</td>
+          <td>1,5 h</td>
+          <td><strong>~15 h</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Signature</strong></td>
+          <td>15 h (Visites + médical)</td>
+          <td>6 h</td>
+          <td>3 h (rapports hebdo)</td>
+          <td>4 h</td>
+          <td><strong>~28 h</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Legacy</strong></td>
+          <td>52 h (2 h × 26 jours)</td>
+          <td>18 h</td>
+          <td>5 h</td>
+          <td>5 h</td>
+          <td><strong>~80 h</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.2 Capacité solo réaliste</h3>
+    <p>
+      Une fondatrice seule dispose d'environ <strong>160 heures clients par mois</strong> en régime durable. Conséquences structurelles :
+    </p>
+    <ul>
+      <li><strong>1 seule famille Legacy acceptée</strong> (plafond dur, affiché comme un privilège exclusif). Un client Legacy consomme la moitié de la capacité totale.</li>
+      <li><strong>Plafond année 1 à 6 familles maximum</strong> (au lieu de 8 dans la V4). Dépasser ce plafond détruirait la qualité.</li>
+      <li><strong>Le tier Legacy est reprisé à NT$180,000/mois</strong> pour refléter cette cannibalisation de la capacité.</li>
+    </ul>
+
+    <h3>4.3 Continuité de service et jours de repos</h3>
+    <p>
+      La formule Legacy inclut un repos hebdomadaire contractuel. Le 7e jour et les congés planifiés sont couverts par la <strong>companion partenaire certifiée sous NDA</strong> (accord bilatéral existant), présentée à la famille dès l'onboarding. Un protocole d'escalade d'urgence écrit est remis à chaque famille.
+    </p>
+
+    <!-- 5. Offre & tarification -->
+    <h2>5. Offre & tarification</h2>
+    
+    <h3>5.1 Packages d'entrée (paiement unique)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 35%;">Package</th>
+          <th style="width: 20%;">Tarif</th>
+          <th style="width: 45%;">Contenu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Private Family Assessment</strong></td>
+          <td>NT$30,000</td>
+          <td>Visite, entretiens, audit appareils & arnaques, Hearth Score initial, activation du Family Hub, signature de la Charte du Senior. <em>(Créditable sur le premier mois de membership)</em>.</td>
+        </tr>
+        <tr>
+          <td><strong>Emergency Preparedness Package</strong></td>
+          <td>NT$50,000</td>
+          <td>Organisation des dossiers médicaux, protocoles de crise, autorisations légales, cartographie des contacts d'urgence.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <h3>5.2 Memberships mensuels</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Tier</th>
+          <th style="width: 20%;">Tarif mensuel</th>
+          <th style="width: 20%;">Pour qui</th>
+          <th style="width: 30%;">Inclusions clés</th>
+          <th style="width: 10%;">Places</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Essential</strong></td>
+          <td>NT$30,000</td>
+          <td>Seniors indépendants</td>
+          <td>4 visites/mois, points bi-mensuels, Family Hub, Hearth Report mensuel.</td>
+          <td>3 max</td>
+        </tr>
+        <tr>
+          <td><strong>Signature</strong> (cœur)</td>
+          <td>NT$55,000</td>
+          <td>La plupart des familles</td>
+          <td>Visites hebdomadaires, accompagnement médical, coordination administrative, co-apprentissage anti-arnaque, rapports hebdomadaires.</td>
+          <td>3 max</td>
+        </tr>
+        <tr>
+          <td><strong>Legacy</strong></td>
+          <td>NT$180,000</td>
+          <td>Besoin maximal</td>
+          <td>Présence active (max 2 h/jour, 6 j/7), messagerie 24/7, projet de transmission & archivage de la mémoire familiale.</td>
+          <td><strong>1 seul</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 6. Go-to-market -->
+    <h2>6. Go-to-market : la preuve avant la promesse</h2>
+    
+    <h3>6.1 Phase 0 — Familles Fondatrices (jours 1–90)</h3>
+    <p>
+      Pour lever le frein de la confiance à ce niveau de prix, nous lançons le <strong>Programme Familles Fondatrices</strong> : 2 à 3 familles pilotes issues du réseau de confiance premier de Félicia bénéficient d'un tarif préférentiel garanti à vie (-20 %), en échange de témoignages et d'études de cas anonymisées.
+    </p>
+    
+    <h3>6.2 Phase 1 — Canal diaspora direct (mois 2–8)</h3>
+    <p>
+      Ciblage des enfants adultes payeurs via LinkedIn, associations d'expatriés (anciens de la Taipei American School) et SEO de fond sur le soutien à distance à Taipei.
+    </p>
+    
+    <h3>6.3 Phase 2 — Référencement B2B haute confiance (mois 6+)</h3>
+    <p>
+      Partenariats avec les tours résidentielles de luxe (Da'an et Xinyi), avocats en planification successorale et bureaux de gestion de fortune privée (Taishin, Fubon, E.Sun).
+    </p>
+
+    <!-- 7. Identité de marque -->
+    <h2>7. Identité de marque</h2>
+    <p>
+      <strong>Métaphore :</strong> <em>« Disperser les nuages pour que la fleur s'épanouisse. »</em>  
+      <strong>Propriété intellectuelle :</strong> Dépôt officiel de la marque (nom + logo) auprès du TIPO (Taiwan Intellectual Property Office) dès le lancement pour protéger la future méthode de certification. Un stress test de prononciation et de recherche Google est réalisé avant le dépôt (Annexe C).
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 8. Opérations & gestion des risques -->
+    <h2>8. Opérations & gestion des risques</h2>
+    <ul>
+      <li><strong>Transport :</strong> Exclusivement taxis premium ou berlines privées refacturés en pass-through. Scooter du budget strictement réservé aux courses admin de Félicia.</li>
+      <li><strong>Zéro Cash & identifiants :</strong> Pas d'accès direct aux mots de passe ou coordonnées bancaires.</li>
+      <li><strong>Reporting industrialisé :</strong> Templates fixes et composants visuels pré-designés. Le rapport hebdomadaire Signature doit être produit en <strong>45 minutes maximum</strong> pour préserver le temps de la fondatrice.</li>
+      <li><strong>Cadre juridique :</strong> Validation par un avocat local de la frontière avec la loi taïwanaise sur le Long-Term Care (長照法). Les clauses d'exclusion de responsabilité anti-arnaque et de gestion de données de santé (個資法) sont intégrées aux contrats.</li>
+    </ul>
+
+    <!-- 9. Modèle financier -->
+    <h2>9. Modèle financier</h2>
+    
+    <h3>9.1 Trois scénarios (année 1, régime de croisière)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Scénario</th>
+          <th>Composition</th>
+          <th>Heures/mois</th>
+          <th>CA mensuel brut</th>
+          <th>Net estimé après taxes*</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Conservateur</strong></td>
+          <td>2 Essential + 2 Signature</td>
+          <td>~86 h</td>
+          <td>NT$170,000</td>
+          <td>~NT$120,000</td>
+        </tr>
+        <tr>
+          <td><strong>Attendu</strong></td>
+          <td>2 Essential + 2 Signature + 1 Legacy</td>
+          <td>~166 h</td>
+          <td>NT$350,000</td>
+          <td><strong>~NT$290,000</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Plafond</strong></td>
+          <td>2 Essential + 3 Signature + 1 Legacy</td>
+          <td>Capacité Max</td>
+          <td>NT$405,000</td>
+          <td>~NT$340,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size: 0.85rem; font-style: italic;">
+      *Avant impôt sur les sociétés et rémunération de la fondatrice. Exclut environ NT$280,000 de revenus d'entrée non récurrents générés par les packages de démarrage en année 1.
+    </p>
+
+    <h3>9.2 Churn & Runway personnel</h3>
+    <p>
+      Hypothèse de durée de vie moyenne d'un membership de 18 à 24 mois. La liste d'attente est entretenue comme un actif permanent. Félicia conserve **6 mois de coût de vie personnel en épargne séparée** (hors capital d'entreprise) pour maintenir sa sérénité commerciale.
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- 10. Budget de démarrage (NT$340,000 / 10,000 €) -->
+    <h2>10. Budget de démarrage</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 35%;">Poste</th>
+          <th style="width: 20%;">Coût (NT$)</th>
+          <th style="width: 15%;">Coût (€)</th>
+          <th style="width: 30%;">Objet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Enregistrement LLC & légal</strong></td>
+          <td>NT$25,000</td>
+          <td>€735</td>
+          <td>Création de la société pro, CPA local, compte bancaire.</td>
+        </tr>
+        <tr>
+          <td><strong>Avis juridique spécialisé</strong></td>
+          <td>NT$15,000</td>
+          <td>€440</td>
+          <td>Contrats, Charte du Senior, frontière 長照法.</td>
+        </tr>
+        <tr>
+          <td><strong>Dépôt de marque TIPO</strong></td>
+          <td>NT$8,000</td>
+          <td>€235</td>
+          <td>Nom + logo, classes de service.</td>
+        </tr>
+        <tr>
+          <td><strong>Formations & certs (Félicia)</strong></td>
+          <td>NT$12,000</td>
+          <td>€350</td>
+          <td>照顧服務員 & Premiers secours Croix-Rouge.</td>
+        </tr>
+        <tr>
+          <td><strong>Assurance RC pro</strong></td>
+          <td>NT$30,000</td>
+          <td>€880</td>
+          <td>Couverture accidents & tiers NT$5–10M.</td>
+        </tr>
+        <tr>
+          <td><strong>Branding & templates</strong></td>
+          <td>NT$25,000</td>
+          <td>€735</td>
+          <td>Assets graphiques et templates de rapports industrialisés.</td>
+        </tr>
+        <tr>
+          <td><strong>Portail & Family Hub</strong></td>
+          <td>NT$30,000</td>
+          <td>€880</td>
+          <td>Hébergement sécurisé, base de données, API LINE (Morgan).</td>
+        </tr>
+        <tr>
+          <td><strong>Marketing B2B premium</strong></td>
+          <td>NT$25,000</td>
+          <td>€735</td>
+          <td>Portfolios imprimés de haute qualité pour les family offices.</td>
+        </tr>
+        <tr>
+          <td><strong>Logiciels & CRM (3 mois)</strong></td>
+          <td>NT$15,000</td>
+          <td>€440</td>
+          <td>Réservations, coffre-fort de documents crypté.</td>
+        </tr>
+        <tr>
+          <td><strong>Scooter d'occasion</strong></td>
+          <td>NT$40,000</td>
+          <td>€1,180</td>
+          <td>Scooter pour les déplacements admin solo de Félicia.</td>
+        </tr>
+        <tr>
+          <td><strong>Réserve de trésorerie</strong></td>
+          <td>NT$115,000</td>
+          <td>€3,390</td>
+          <td>Fonds de roulement et OPEX de démarrage.</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>NT$340,000</strong></td>
+          <td><strong>€10,000</strong></td>
+          <td><strong>100 % de l'apport initial</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 11. Roadmap & Vision -->
+    <h2>11. Roadmap & Vision</h2>
+    <p>
+      <strong>Jours 1–30 :</strong> Register LLC. Avis juridique (contrats, Charte). Certification 照顧服務員. Dépôt de marque. Préparation des templates de rapports industriels (≤45 min/rapport).  
+      <strong>Jours 31–60 :</strong> Lancement du programme Familles Fondatrices (2-3 clients à -20 %). Premiers rapports et Family Hub opérationnel.  
+      <strong>Jours 61–90 :</strong> Stabilisation, SOP, recueil des études de cas, prospection des canaux diaspora et préparation B2B.  
+      <strong>Ans 2–5 :</strong> Recrutement de companions certifiées, formation à la <strong>Hearthlily Method™</strong>, et licensing technologique.
+    </p>
+
+    <!-- Page Break -->
+    <div class="page-break"></div>
+
+    <!-- Annexes -->
+    <h2>Annexes</h2>
+    <h3>Annexe A — Protocole d'escalade d'urgence</h3>
+    <p>Niveaux d'urgence définis (médical / sécurité / numérique / émotionnel), chaîne d'appel horodatée (119, Hearthlily, companion backup, famille, médecin référent), fenêtres de disponibilité par tier, engagement de délai de première réponse.</p>
+
+    <h3>Annexe B — Charte du Senior</h3>
+    <p>Périmètre du reporting consenti ; sujets exclus à la demande du senior ; droit de veto permanent ; modalités de révision ; signature tripartite (senior, famille payeuse, Hearthlily) ; version en caractères agrandis remise au senior.</p>
+
+    <h3>Annexe C — Naming</h3>
+    <p>Le nom anglais définitif est validé par stress test avant dépôt de marque : prononciation par 5 personnes de la cible, épellation au téléphone, recherche Google spontanée, disponibilité domaine + TIPO. Candidats évalués en parallèle du nom de travail « Hearthlily ».</p>
+
+  </div>
+
+</body>
+</html>

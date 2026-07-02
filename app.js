@@ -60,7 +60,7 @@ const translations = {
 
     "retainer.legacy.badge": "LEGACY ULTRA",
     "retainer.legacy.title": "Legacy Membership",
-    "retainer.legacy.subtitle": "Family Governance & Curation · NT$100,000+ / mo",
+    "retainer.legacy.subtitle": "Family Governance & Curation · NT$180,000 / mo",
     "retainer.legacy.desc": "Our flagship membership, offering high-frequency daily lifestyle curation, family succession liaison, and complete digital/legal heritage coordination.",
     "retainer.legacy.feature1": "Daily premium presence & customized lifestyle concierge",
     "retainer.legacy.feature2": "Complete digital legacy archiving & password/asset inheritance setups",
@@ -161,7 +161,7 @@ const translations = {
 
     "retainer.legacy.badge": "極致尊榮傳承",
     "retainer.legacy.title": "玉萱傳承方案",
-    "retainer.legacy.subtitle": "玉萱傳承方案 · 每月 NT$100,000+",
+    "retainer.legacy.subtitle": "玉萱傳承方案 · 每月 NT$180,000",
     "retainer.legacy.desc": "晴萱頂級旗艦方案。包含極高頻的每日生活管家伴行、家族繼承事務協調、個人自傳數位建檔及跨代法律/稅務規劃諮詢對接。",
     "retainer.legacy.feature1": "每日專屬生活管家探視、高頻藝文伴遊與隨身助理",
     "retainer.legacy.feature2": "完整個人數位遺產整理、雲端相簿建檔與密碼繼承規劃",

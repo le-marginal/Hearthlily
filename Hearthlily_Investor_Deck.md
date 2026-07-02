@@ -88,7 +88,7 @@ The brand combines warmth (Hearth) with the Daylily flower (萱草 — the flowe
 
 We deliberately limit capacity to protect quality and exclusivity.
 
-**Maximum 12 families per year.**
+**Maximum 6 families in Year 1 (capacity cap).**
 
 ### Membership Tiers
 
@@ -96,7 +96,7 @@ We deliberately limit capacity to protect quality and exclusivity.
 |---------------|--------------------|-----------------------|
 | **Essential**     | NT$30,000         | 4 visits + structured updates + Family Hub access |
 | **Signature**     | NT$55,000         | Weekly presence + medical coordination + scam co-learning + weekly UX Family Reports |
-| **Legacy**        | NT$100,000+       | Daily support + 24/7 liaison + family governance + legacy work |
+| **Legacy**        | NT$180,000        | Daily support (max 2h/day) + 24/7 priority messaging window + legacy work |
 
 One-time entry packages (Assessment + Emergency Readiness) range from NT$30k to NT$50k.
 
@@ -132,13 +132,13 @@ These gatekeepers already serve the exact families we want to serve.
 
 ## 9. Unit Economics (Three Scenarios)
 
-**Year 1 Target**: 6–8 families (founder-led)
+**Year 1 Target**: 6 families (founder-led capacity cap)
 
 | Scenario       | Families | Monthly Gross | Monthly Net (est.) |
 |----------------|----------|---------------|--------------------|
 | Conservative       | 4        | ~NT$170k     | ~NT$120k          |
-| **Expected**       | **6**    | **~NT$330k** | **~NT$250k**      |
-| Optimistic         | 8        | ~NT$480k     | ~NT$360k          |
+| **Expected**       | **6**    | **~NT$350k** | **~NT$290k**      |
+| Plafond (Cap)      | 6        | ~NT$375k-405k| ~NT$310k-340k     |
 
 High margins come from premium pricing, operational discipline, and the decision to stay small and elite in the founding phase.
 

@@ -4,7 +4,7 @@ Hello! If you are the Antigravity agent working with **Félicia** (or **Morgan**
 
 ---
 
-## 1. Project Context & Branding (V4 Specs)
+## 1. Project Context & Branding (V5 Specs)
 *   **Company Name:** Hearthlily — 晴萱
 *   **Positioning:** Private Family Office for Aging (Taipei, Taiwan)
 *   **Key Metaphor:** *"Disperse the clouds so the flower can bloom."*
@@ -14,7 +14,7 @@ Hello! If you are the Antigravity agent working with **Félicia** (or **Morgan**
     *   *Emergency Preparedness Package:* NT$50,000
     *   *Essential Membership:* NT$30,000 / month
     *   *Signature Membership (Core):* NT$55,000 / month
-    *   *Legacy Membership:* NT$100,000+ / month
+    *   *Legacy Membership:* NT$180,000 / month
 
 ---
 
