@@ -8,6 +8,8 @@
   --color-gold: #D4AF37;
   --color-gold-dark: #B5932B;
   --color-gold-light: rgba(212, 175, 55, 0.12);
+  --color-orange: #E59866;
+  --color-orange-light: rgba(229, 152, 102, 0.12);
   --color-charcoal: #2A312D;
   --glass-bg: rgba(253, 251, 247, 0.78);
   --glass-border: rgba(95, 125, 109, 0.15);
@@ -51,13 +53,28 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.orange-text {
+  color: var(--color-orange);
+}
+
 .gold-badge {
   color: var(--color-gold-dark);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.18em;
-  display: inline-block;
   text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.orange-badge {
+  color: var(--color-orange);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  display: block;
 }
 
 /* Button Systems */
