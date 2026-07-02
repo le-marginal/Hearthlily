@@ -96,7 +96,7 @@ Hearthlily deliberately limits capacity to protect quality and exclusivity.
 |-------------------|------------------|----------|----------------|
 | **Essential**         | NT$30,000       | Independent seniors | 4 visits/month, bi-weekly updates, Family Hub access, monthly Hearth Report |
 | **Signature** (Core)  | NT$55,000       | Most families | Weekly visits, medical accompaniment, admin coordination, scam co-learning, **weekly UX Family Reports** |
-| **Legacy**            | NT$100,000+     | Highest need | Daily presence, 24/7 liaison, family governance, legacy archiving, priority response |
+| **Legacy**            | NT$150,000 / mo | Highest need | Daily active presence (max 2h/day), 24/7 messaging window, family succession & legacy archiving |
 
 ---
 
@@ -141,20 +141,24 @@ This combination is ownable, culturally resonant, and perfectly suited to a desi
 
 ## Operations & Risk Management
 
-- **Transport**: Only premium taxis or chauffeured vehicles (never scooters). Billed as pass-through.
-- **Cash & Credentials**: Strict zero-handling policy.
-- **Insurance**: Professional liability + accident coverage (minimum NT$5–10M).
-- **Founder Protection**: All processes documented in the **Hearthlily Operating Manual** (SOPs, tone of voice, escalation matrices) — ready for future team members.
+- **Transport**: Only premium taxis or chauffeured vehicles (never scooters) are used for seniors during client sessions, billed as pass-through. The used scooter purchased in the startup budget is strictly for Félicia's solo administrative runs and coordination tasks.
+- **Cash & Credentials**: Strict zero-handling policy. No access to client passwords, credit cards, or cash.
+- **Insurance & Legal boundaries**: Professional liability + accident coverage (minimum NT$5–10M). Hearthlily maintains a clear boundary between clinical care and concierge/lifestyle operations. The caregiver certification (照顧服務員) held by Félicia defines the legal scope of emergency physical support, but medical sitters are contracted independently for clinical needs.
+- **Backup Companion & Key Person Risk**: To prevent service disruption if Félicia is unavailable, Hearthlily maintains a bilateral backup agreement with a certified, trusted Taipei-based concierge/care companion under NDA.
 
 ---
 
 ## Distribution & Go-to-Market
 
-We prioritize warm, high-trust channels:
+We prioritize two parallel channels:
 
-**Tier 1 (Priority)**: Luxury residential towers in Da’an & Xinyi  
-**Tier 2**: Estate lawyers & family offices (inheritance, power of attorney, succession)  
-**Tier 3**: Boutique clinics and private wealth teams (Taishin, Fubon, E.Sun)
+**1. High-Trust B2B Referrals (Long-Term)**:
+*   **Tier 1**: Luxury residential towers in Da’an & Xinyi (VIP concierge amenity pitch).
+*   **Tier 2**: Estate planning lawyers & family offices (inheritance and power of attorney coordination).
+*   **Tier 3**: Private wealth advisory teams (Taishin, Fubon, E.Sun) and premium health clinics.
+
+**2. Expatriate Diaspora Direct Channel (Short-Term/Launch)**:
+*   We target the adult children directly (the primary payors) via professional networks (LinkedIn), expat communities (Taipei American School alumni, chamber of commerce groups), and search engine optimization (SEO) focusing on topics like "remote elderly care Taipei" or "anti-scam protection parents Taiwan".
 
 ---
 
@@ -184,8 +188,8 @@ Hearthlily is launched with an initial capital ceiling of **€10,000 (approx. N
 | Scenario       | Families                  | Monthly Gross Revenue | Monthly Net Profit (approx.) | Notes |
 |----------------|---------------------------|-----------------------|------------------------------|-------|
 | **Conservative**   | 4 (2 Essential + 2 Signature) | ~NT$170,000          | ~NT$120,000                 | Slower acquisition |
-| **Expected**       | 6 (3 Essential + 2 Signature + 1 Legacy) | ~NT$300–360,000     | ~NT$220–280,000             | Realistic target |
-| **Optimistic**     | 8 (4 Essential + 3 Signature + 1 Legacy) | ~NT$450–500,000     | ~NT$320–400,000             | Strong B2B traction |
+| **Expected**       | 6 (3 Essential + 2 Signature + 1 Legacy) | ~NT$350,000          | ~NT$260,000                 | Realistic target |
+| **Optimistic**     | 8 (4 Essential + 3 Signature + 1 Legacy) | ~NT$435,000          | ~NT$330,000                 | Strong B2B traction |
 
 These figures assume disciplined client selection and high retention.
 
